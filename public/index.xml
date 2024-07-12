@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blowfish</title>
+    <title>Will Steedman</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Blowfish</description>
+    <description>Recent content on Will Steedman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Will Steedman</copyright>
-    <lastBuildDate>Mon, 14 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My first post</title>
-      <link>http://localhost:1313/posts/myfirstpost/</link>
-      <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
+      <title>About Me 2.0</title>
+      <link>http://localhost:1313/posts/secondpost/secondpost/</link>
+      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/myfirstpost/</guid>
-      <description>This is my first post on my site</description>
+      <guid>http://localhost:1313/posts/secondpost/secondpost/</guid>
+      <description>Learn more about me and why I am starting this blog.</description>
+      
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/aboutme/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/aboutme/</guid>
+      <description>Welcome to my website!</description>
+      
+    </item>
+    
+    <item>
+      <title>About My Beautiful Face</title>
+      <link>http://localhost:1313/posts/firstpost/</link>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/firstpost/</guid>
+      <description>Learn more about me and why I am starting this blog.</description>
       
     </item>
     

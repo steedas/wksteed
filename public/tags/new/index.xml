@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Will Steedman</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Will Steedman</description>
+    <title>New on Will Steedman</title>
+    <link>http://localhost:1313/tags/new/</link>
+    <description>Recent content in New on Will Steedman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Will Steedman</copyright>
-    <lastBuildDate>Thu, 25 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/new/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me 2.0</title>
       <link>http://localhost:1313/posts/secondpost/secondpost/</link>
