@@ -99,7 +99,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "35"
+    "wordCount": "233"
   }]
   </script>
 
@@ -406,15 +406,194 @@
   <div class="relative flex flex-col grow">
     <main id="main-content" class="grow">
       
-  <article class="max-w-full">
-    <header>
+
+
+<article>
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      About Me
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
-      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        About Me
-      </h1>
-    </header>
-    <section class="max-w-full mt-6 prose dark:prose-invert">
-      <p>
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+
+  
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+      
+      
+
+      
+
+      
+
+    
+
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+
+         <details open id="TOCView"
+  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#who-am-i">Who am I?</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#why-a-website">Why a Website?</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#who-am-i">Who am I?</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#why-a-website">Why a Website?</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+<script>
+
+  var margin = 200;
+  var marginError = 50;
+
+  (function () {
+    var $window = $(window);
+    var $toc = $('#TOCView');
+    var tocHeight = $toc.height();
+
+    function onResize() {
+      var windowAndMarginHeight = $window.height() - margin;
+      if(tocHeight >= windowAndMarginHeight) {
+        $toc.css("overflow-y", "scroll")
+        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
+      } else {
+        $toc.css("overflow-y", "hidden")
+        $toc.css("max-height", "9999999px")
+      }
+    }
+
+    $window.on('resize', onResize);
+    $(document).ready(onResize);
+  })();
+
+
+
+</script>
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="article-content max-w-prose mb-20">
+          <p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /aboutme/images/portrait2_hue90f9791e314cf0712b2f9a6183222bd_97229_330x0_resize_q75_box.jpeg 330w,
+        /aboutme/images/portrait2_hue90f9791e314cf0712b2f9a6183222bd_97229_660x0_resize_q75_box.jpeg 660w,
+        /aboutme/images/portrait2_hue90f9791e314cf0712b2f9a6183222bd_97229_1024x0_resize_q75_box.jpeg 1024w,
+        /aboutme/images/portrait2_hue90f9791e314cf0712b2f9a6183222bd_97229_1320x0_resize_q75_box.jpeg 2x"
+        src="/aboutme/images/portrait2_hue90f9791e314cf0712b2f9a6183222bd_97229_660x0_resize_q75_box.jpeg"
+        alt="Face"
+      />
+      
+    </figure>
+</p>
+<p><em>Welcome</em> to my website! Here I talk about my engineering projects and create small tutorials on technology, carpentry and other eclectic hobbies of mine. To reach me, don&rsquo;t hesitate to reach out to me at <a href="mailto:steedmanwill@gmail.com">steedmanwill@gmail.com</a>.</p>
+
+
+<h2 class="relative group">Who am I? 
+    <div id="who-am-i" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#who-am-i" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>
     <figure>
       <img
         class="my-0 rounded-md"
@@ -425,19 +604,143 @@
         /aboutme/images/first_hu69a32ee507d5b3a94ba38a184198e4b5_315533_1024x0_resize_q75_box.jpeg 1024w,
         /aboutme/images/first_hu69a32ee507d5b3a94ba38a184198e4b5_315533_1320x0_resize_q75_box.jpeg 2x"
         src="/aboutme/images/first_hu69a32ee507d5b3a94ba38a184198e4b5_315533_660x0_resize_q75_box.jpeg"
-        alt="Face"
+        alt="First"
       />
       
     </figure>
 </p>
-<p><em>Welcome</em> to my website! Here I talk about my engineering projects, small tutorials on technology, carpentry and other random hobbies of mine. I like writing blog posts on things ranging from neuroscience to plants, too.</p>
+<p>I am a third mechatronics engineering student at Queen&rsquo;s University. I chose mechatronics engineering because of the depth of opportunity for creativity and learning it has. Outside of my design projects I love weightlifting, the summer, carpentry, music (indie rock is my favorite) and reading. My favourite book right now is &ldquo;Make it Stick by Roediger III, Henry and Brown&rdquo;.</p>
 
-    </section>
-    <footer class="pt-8">
+
+<h2 class="relative group">Gallery 
+    <div id="gallery" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#gallery" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Here is my life in photos:</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /aboutme/images/hockey2_hu4570ab0714ce5f2716522bf60f4bea6f_1670991_330x0_resize_q75_box.jpg 330w,
+        /aboutme/images/hockey2_hu4570ab0714ce5f2716522bf60f4bea6f_1670991_660x0_resize_q75_box.jpg 660w,
+        /aboutme/images/hockey2_hu4570ab0714ce5f2716522bf60f4bea6f_1670991_1024x0_resize_q75_box.jpg 1024w,
+        /aboutme/images/hockey2_hu4570ab0714ce5f2716522bf60f4bea6f_1670991_1320x0_resize_q75_box.jpg 2x"
+        src="/aboutme/images/hockey2_hu4570ab0714ce5f2716522bf60f4bea6f_1670991_660x0_resize_q75_box.jpg"
+        alt="New"
+      />
       
+    </figure>
 
-    </footer>
-  </article>
+I have played hockey since I was four. I loved it so much back then that I used to wear a helmet in public, much to my parents&rsquo; horror. Sorry Mom and Dad.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /aboutme/images/IMG_1396_hud91c7fe6904fca7ec4db59569fa3fb8e_1968679_330x0_resize_q75_box.jpg 330w,
+        /aboutme/images/IMG_1396_hud91c7fe6904fca7ec4db59569fa3fb8e_1968679_660x0_resize_q75_box.jpg 660w,
+        /aboutme/images/IMG_1396_hud91c7fe6904fca7ec4db59569fa3fb8e_1968679_1024x0_resize_q75_box.jpg 1024w,
+        /aboutme/images/IMG_1396_hud91c7fe6904fca7ec4db59569fa3fb8e_1968679_1320x0_resize_q75_box.jpg 2x"
+        src="/aboutme/images/IMG_1396_hud91c7fe6904fca7ec4db59569fa3fb8e_1968679_660x0_resize_q75_box.jpg"
+        alt="Dog"
+      />
+      
+    </figure>
+
+My friend Griff and I! Griff is my families&rsquo; 7-year old Boston Terrier. He loves cheese.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /aboutme/images/surf_hu987ea15dfc95db2058762c96b0cdaeda_125503_330x0_resize_q75_box.jpeg 330w,
+        /aboutme/images/surf_hu987ea15dfc95db2058762c96b0cdaeda_125503_660x0_resize_q75_box.jpeg 660w,
+        /aboutme/images/surf_hu987ea15dfc95db2058762c96b0cdaeda_125503_1024x0_resize_q75_box.jpeg 1024w,
+        /aboutme/images/surf_hu987ea15dfc95db2058762c96b0cdaeda_125503_1320x0_resize_q75_box.jpeg 2x"
+        src="/aboutme/images/surf_hu987ea15dfc95db2058762c96b0cdaeda_125503_660x0_resize_q75_box.jpeg"
+        alt="Face"
+      />
+      
+    </figure>
+
+Surfing (behind a boat)</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /aboutme/images/dirty3_hu94708012d7181ee6a7920fa42050c217_1827505_330x0_resize_q75_box.jpg 330w,
+        /aboutme/images/dirty3_hu94708012d7181ee6a7920fa42050c217_1827505_660x0_resize_q75_box.jpg 660w,
+        /aboutme/images/dirty3_hu94708012d7181ee6a7920fa42050c217_1827505_1024x0_resize_q75_box.jpg 1024w,
+        /aboutme/images/dirty3_hu94708012d7181ee6a7920fa42050c217_1827505_1320x0_resize_q75_box.jpg 2x"
+        src="/aboutme/images/dirty3_hu94708012d7181ee6a7920fa42050c217_1827505_660x0_resize_q75_box.jpg"
+        alt="Face"
+      />
+      
+    </figure>
+
+Mixing concrete gets a bit messy&hellip;</p>
+
+
+<h2 class="relative group">Why a Website? 
+    <div id="why-a-website" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#why-a-website" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>I see this website as an opportunity for me to document my life as a student and person. I am hoping to look back when I am older and appreciate how much progress I have made! It also allows me to connect with other people with shared interests. Last, it feels nice to share projects and ideas that I am proud of!</p>
+
+        </div>
+        
+        
+
+        
+        
+
+          
+      </div>
+     
+      
+      
+        
+        
+          
+          
+        
+      <script>
+        var oid = "views_aboutme\/index.md"
+        var oid_likes = "likes_aboutme\/index.md"
+      </script>
+      
+      
+      
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+
+
+    
+  </footer>
+</article>
 
       <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
   <a href="#the-top"

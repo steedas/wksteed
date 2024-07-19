@@ -7,25 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Will Steedman</copyright>
-    <lastBuildDate>Thu, 25 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/welcome/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Apr 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/welcome/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About Me 2.0</title>
-      <link>http://localhost:1313/posts/secondpost/secondpost/</link>
-      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+      <title>Developing Robots to Compete on the World Stage</title>
+      <link>http://localhost:1313/posts/thirdpost/</link>
+      <pubDate>Thu, 11 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/secondpost/secondpost/</guid>
-      <description>Learn more about me and why I am starting this blog.</description>
-      
+      <guid>http://localhost:1313/posts/thirdpost/</guid>
+      <description>Designing reliable mechanisms for the VEX U World Championships in Dallas</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/thirdpost/featured3.jpg" />
     </item>
     
     <item>
-      <title>About My Beautiful Face</title>
+      <title>Designing a 3D Printed Robot Arm to Clean My Room</title>
+      <link>http://localhost:1313/posts/secondpost/</link>
+      <pubDate>Thu, 25 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/secondpost/</guid>
+      <description>Using CAD, math and coding to give me an extra hand with chores</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/secondpost/featured2.jpg" />
+    </item>
+    
+    <item>
+      <title>Making Race Car Parts Strong Using Simulation</title>
       <link>http://localhost:1313/posts/firstpost/</link>
-      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Nov 2023 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/posts/firstpost/</guid>
-      <description>Learn more about me and why I am starting this blog.</description>
-      
+      <description>Designing robust, machined parts for offroad BAJA racecars</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/firstpost/featured.jpg" />
     </item>
     
   </channel>
