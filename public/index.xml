@@ -25,7 +25,7 @@
       
       <guid>http://localhost:1313/posts/secondpost/</guid>
       <description>Using CAD, math and coding to give me an extra hand with chores</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/secondpost/featured2.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/secondpost/featured.JPG" />
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       
       <guid>http://localhost:1313/posts/firstpost/</guid>
       <description>Designing robust, machined parts for offroad BAJA racecars</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/firstpost/featured.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/firstpost/featured.png" />
     </item>
     
     <item>

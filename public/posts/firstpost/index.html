@@ -73,11 +73,11 @@
     <meta property="article:tag" content="New">
     <meta property="article:tag" content="About">
     <meta property="article:tag" content="First">
-    <meta property="og:image" content="http://localhost:1313/posts/firstpost/featured.jpg">
+    <meta property="og:image" content="http://localhost:1313/posts/firstpost/featured.png">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/posts/firstpost/featured.jpg">
+  <meta name="twitter:image" content="http://localhost:1313/posts/firstpost/featured.png">
   <meta name="twitter:title" content="Making Race Car Parts Strong Using Simulation">
   <meta name="twitter:description" content="BAJA">
 
@@ -106,7 +106,7 @@
     "keywords": ["welcome","new","about","first"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "8"
+    "wordCount": "519"
   }]
   </script>
 
@@ -464,7 +464,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-05-22 00:00:00 &#43;0000 UTC">22 May 2023</time><span class="px-2 text-primary-500">&middot;</span><span>8 words</span>
+  <time datetime="2023-05-22 00:00:00 &#43;0000 UTC">22 May 2023</time><span class="px-2 text-primary-500">&middot;</span><span>519 words</span>
   
 
   
@@ -501,7 +501,75 @@
   
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
     
-    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+
+         <details open id="TOCView"
+  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#experience-learning--skills">Experience, Learning &amp; Skills</a></li>
+    <li><a href="#motivation">Motivation</a></li>
+    <li><a href="#technical-details">Technical Details</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#experience-learning--skills">Experience, Learning &amp; Skills</a></li>
+    <li><a href="#motivation">Motivation</a></li>
+    <li><a href="#technical-details">Technical Details</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+<script>
+
+  var margin = 200;
+  var marginError = 50;
+
+  (function () {
+    var $window = $(window);
+    var $toc = $('#TOCView');
+    var tocHeight = $toc.height();
+
+    function onResize() {
+      var windowAndMarginHeight = $window.height() - margin;
+      if(tocHeight >= windowAndMarginHeight) {
+        $toc.css("overflow-y", "scroll")
+        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
+      } else {
+        $toc.css("overflow-y", "hidden")
+        $toc.css("max-height", "9999999px")
+      }
+    }
+
+    $window.on('resize', onResize);
+    $(document).ready(onResize);
+  })();
+
+
+
+</script>
+   </div>
+      </div>
+      
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
@@ -509,7 +577,181 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p><em>This</em> is the content of my blog post.</p>
+          <p>As part of the vehicle dynamics subteam, I optimized past hub designs using finite element analysis (FEA) to reduce weight by <strong>7%</strong> in spite of having <strong>material 3.75x weaker</strong> than previous years.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/firstpost/photos/IMG_2021_hu347bf75507255dc057a0a0a28011d253_195405_330x0_resize_q75_box.jpg 330w,
+        /posts/firstpost/photos/IMG_2021_hu347bf75507255dc057a0a0a28011d253_195405_660x0_resize_q75_box.jpg 660w,
+        /posts/firstpost/photos/IMG_2021_hu347bf75507255dc057a0a0a28011d253_195405_1024x0_resize_q75_box.jpg 1024w,
+        /posts/firstpost/photos/IMG_2021_hu347bf75507255dc057a0a0a28011d253_195405_1320x0_resize_q75_box.jpg 2x"
+        src="/posts/firstpost/photos/IMG_2021_hu347bf75507255dc057a0a0a28011d253_195405_660x0_resize_q75_box.jpg"
+        alt="Racecar"
+      />
+      
+    </figure>
+
+<em>Queen&rsquo;s &lsquo;22-&lsquo;23 BAJA Race Car at competition at OktoBajafest in Clarkson, NY</em></p>
+
+
+<h2 class="relative group">Experience, Learning &amp; Skills 
+    <div id="experience-learning--skills" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#experience-learning--skills" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/firstpost/photos/Diagram2_hu91c099494cfa03aa2fa0ccdf5c0da59c_275208_330x0_resize_q75_box.jpg 330w,
+        /posts/firstpost/photos/Diagram2_hu91c099494cfa03aa2fa0ccdf5c0da59c_275208_660x0_resize_q75_box.jpg 660w,
+        /posts/firstpost/photos/Diagram2_hu91c099494cfa03aa2fa0ccdf5c0da59c_275208_1024x0_resize_q75_box.jpg 1024w,
+        /posts/firstpost/photos/Diagram2_hu91c099494cfa03aa2fa0ccdf5c0da59c_275208_1320x0_resize_q75_box.jpg 2x"
+        src="/posts/firstpost/photos/Diagram2_hu91c099494cfa03aa2fa0ccdf5c0da59c_275208_660x0_resize_q75_box.jpg"
+        alt="Part"
+      />
+      
+    </figure>
+</p>
+<p>Experience:</p>
+<ul>
+<li>I was given the opportunity to <strong>design, simulate and manufacture</strong> the wheel hubs for the &lsquo;22-&lsquo;23 BAJA racer. I collaborated with 10 other engineering students apart of a vehicle dynamics subteam at Queen&rsquo;s University.</li>
+</ul>
+<p>Skills:</p>
+<ul>
+<li>I developed skills in <strong>Solidworks</strong> and <strong>SolidCAM</strong> during the design and simulation phases of this project. Particularly, I learned how to setup/use <strong>FEA</strong> for design dynamics validation and ensure our parts could be manufactured using <strong>CNC</strong></li>
+</ul>
+<p>Lessons:</p>
+<ul>
+<li>
+<p><strong>Manufacturing Matters!</strong>     A dynamically and spatially feasible design doesn&rsquo;t equal a pragmatical design. Without considering manufacturing methods from project inception lots of time can be wasted designing un-makable parts.</p>
+</li>
+<li>
+<p><strong>Learn from people.</strong> I was fortunate to be mentored by Manny, a then third year Mech. Eng student. He taught me so much about FEA and how to optimize designs. I learned how important it is to ask questions and pay attention to experts around you.</p>
+</li>
+</ul>
+
+
+<h2 class="relative group">Motivation 
+    <div id="motivation" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#motivation" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Our team changed metal suppliers at the start of the year. This meant we didn&rsquo;t have access to the uber-strong Aermet Steel (1723N/mm^2) from before. We only had AISI 4130 (460N/mm^2), a much weaker steel. Race car competitions (think F1) are all about making your vehicle as manouverable, light and aerodynamic as possible. We wanted to take our old hubs (from below) and improve them to be lighter and stronger, allowing us to get faster times in competition.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/firstpost/photos/IMG-0190-jpg_hu67aa42578648e9c2e1c70333f748b5c0_14692444_330x0_resize_box_3.png 330w,
+        /posts/firstpost/photos/IMG-0190-jpg_hu67aa42578648e9c2e1c70333f748b5c0_14692444_660x0_resize_box_3.png 660w,
+        /posts/firstpost/photos/IMG-0190-jpg_hu67aa42578648e9c2e1c70333f748b5c0_14692444_1024x0_resize_box_3.png 1024w,
+        /posts/firstpost/photos/IMG-0190-jpg_hu67aa42578648e9c2e1c70333f748b5c0_14692444_1320x0_resize_box_3.png 2x"
+        src="/posts/firstpost/photos/IMG-0190-jpg_hu67aa42578648e9c2e1c70333f748b5c0_14692444_660x0_resize_box_3.png"
+        alt="OldHubs"
+      />
+      
+    </figure>
+
+<em>The &lsquo;21-&lsquo;22 wheel hubs, without the wheel attached</em></p>
+
+
+<h2 class="relative group">Technical Details 
+    <div id="technical-details" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#technical-details" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>Since we had a CAD from last year, the logical first step was to change the material from AerMet to 4130 and run an FEA on the design to see how it performed. For our loading values we used <a href="https://www.irjet.net/archives/V9/i8/IRJET-V9I8313.pdf" target="_blank">this</a> paper. I set up an FEA and got these results.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/firstpost/photos/PrevLoading_huc5dba4df63dc230d5054538c70156bf8_102992_330x0_resize_box_3.png 330w,
+        /posts/firstpost/photos/PrevLoading_huc5dba4df63dc230d5054538c70156bf8_102992_660x0_resize_box_3.png 660w,
+        /posts/firstpost/photos/PrevLoading_huc5dba4df63dc230d5054538c70156bf8_102992_1024x0_resize_box_3.png 1024w,
+        /posts/firstpost/photos/PrevLoading_huc5dba4df63dc230d5054538c70156bf8_102992_1320x0_resize_box_3.png 2x"
+        src="/posts/firstpost/photos/PrevLoading_huc5dba4df63dc230d5054538c70156bf8_102992_660x0_resize_box_3.png"
+        alt="OldLoading"
+      />
+      
+    </figure>
+</p>
+<p>This result showed points on the hub where the material would permanently deform (yield) above an acceptable rate (Young&rsquo;s Modulus of AISI 4130, in this case 460 MPa). If we were to remanufacture the hubs w/ the same material we would surely break all of them.</p>
+<p>This meant we had to iterate! We wanted to keep the same general form (since we knew it was compatible with our current wheels and wheel package) so the iteration included modestly changing spoke geometry.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/firstpost/photos/CAM_hu94fa4c04cd19275a25d65686e342b851_66511_330x0_resize_box_3.png 330w,
+        /posts/firstpost/photos/CAM_hu94fa4c04cd19275a25d65686e342b851_66511_660x0_resize_box_3.png 660w,
+        /posts/firstpost/photos/CAM_hu94fa4c04cd19275a25d65686e342b851_66511_1024x0_resize_box_3.png 1024w,
+        /posts/firstpost/photos/CAM_hu94fa4c04cd19275a25d65686e342b851_66511_1320x0_resize_box_3.png 2x"
+        src="/posts/firstpost/photos/CAM_hu94fa4c04cd19275a25d65686e342b851_66511_660x0_resize_box_3.png"
+        alt="CAM"
+      />
+      
+    </figure>
+
+I went through five iterations to reduce overall weight by 60g while keeping the hubs compatible with our wheel package. We used Solidworks CAM to make sure our hubs would be manufactureable on an outsourced 5-axis CNC mill.</p>
+<p>The final hubs looked like this. While you may not be able to even tell, the spoke shape and cutouts look different.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/firstpost/photos/WheelHub_huf7e4f13fa4bd27e5e3cab848d42c5f64_239077_330x0_resize_box_3.png 330w,
+        /posts/firstpost/photos/WheelHub_huf7e4f13fa4bd27e5e3cab848d42c5f64_239077_660x0_resize_box_3.png 660w,
+        /posts/firstpost/photos/WheelHub_huf7e4f13fa4bd27e5e3cab848d42c5f64_239077_1024x0_resize_box_3.png 1024w,
+        /posts/firstpost/photos/WheelHub_huf7e4f13fa4bd27e5e3cab848d42c5f64_239077_1320x0_resize_box_3.png 2x"
+        src="/posts/firstpost/photos/WheelHub_huf7e4f13fa4bd27e5e3cab848d42c5f64_239077_660x0_resize_box_3.png"
+        alt="WheelHub"
+      />
+      
+    </figure>
+</p>
+<p>Due to budget constraints we weren&rsquo;t able to manufacture the hubs during the &lsquo;22-&lsquo;23 season. However, during the &lsquo;23-&lsquo;24 season (barring some more optimizations that I was not apart of) my teammates were able to get these beautiful hubs made.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/firstpost/photos/HUBSMACHINED_hu96cc01ff6887ef7384db2b10568434a0_1293926_330x0_resize_box_3.png 330w,
+        /posts/firstpost/photos/HUBSMACHINED_hu96cc01ff6887ef7384db2b10568434a0_1293926_660x0_resize_box_3.png 660w,
+        /posts/firstpost/photos/HUBSMACHINED_hu96cc01ff6887ef7384db2b10568434a0_1293926_1024x0_resize_box_3.png 1024w,
+        /posts/firstpost/photos/HUBSMACHINED_hu96cc01ff6887ef7384db2b10568434a0_1293926_1320x0_resize_box_3.png 2x"
+        src="/posts/firstpost/photos/HUBSMACHINED_hu96cc01ff6887ef7384db2b10568434a0_1293926_660x0_resize_box_3.png"
+        alt="Machined"
+      />
+      
+    </figure>
+</p>
 
         </div>
         
