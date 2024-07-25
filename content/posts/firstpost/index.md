@@ -7,7 +7,7 @@ tags: ["welcome", "new", "about", "first"]
 showDate: true
 ---
 
-As part of the vehicle dynamics subteam, I optimized past hub designs using finite element analysis (FEA) to reduce weight by **7%** in spite of having **material 3.75x weaker** than previous years.
+As part of the vehicle dynamics subteam for the Queen's University BAJA SAE Team, I optimized past hub designs using finite element analysis (FEA) to reduce weight by **7%** in spite of having **material 3.75x weaker** than previous years.
 
 ![Racecar](photos/IMG_2021.jpg)
 _Queen's '22-'23 BAJA Race Car at competition at OktoBajafest in Clarkson, NY_
@@ -18,7 +18,7 @@ _Queen's '22-'23 BAJA Race Car at competition at OktoBajafest in Clarkson, NY_
 
 Experience:
 
-- I was given the opportunity to **design, simulate and manufacture** the wheel hubs for the '22-'23 BAJA racer. I collaborated with 10 other engineering students apart of a vehicle dynamics subteam at Queen's University.
+- I was given the opportunity to **design, simulate and manufacture** the wheel hubs for the '22-'23 BAJA racer. I collaborated with 10 other engineering students apart of a vehicle dynamics subteam at the Queen's University BAJA Team.
 
 Skills:
 
