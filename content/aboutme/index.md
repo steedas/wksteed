@@ -16,7 +16,7 @@ _Welcome_ to my website! Here I talk about my engineering projects and create sm
 
 ![First](images/first.jpeg)
 
-I am a third mechatronics engineering student at Queen's University. I chose mechatronics engineering because of the depth of opportunity for creativity and learning it has. Outside of my design projects I love weightlifting, the summer, carpentry, music (indie rock is my favorite) and reading. My favourite book right now is "Make it Stick by Roediger III, Henry and Brown".
+I am a third year mechatronics engineering student at Queen's University. I chose mechatronics engineering because of the depth of opportunity for creativity and learning it has. Outside of my design projects I love weightlifting, the summer, carpentry, music (indie rock is my favorite) and reading. My favourite book right now is "Make it Stick by Roediger III, Henry and Brown".
 
 ## Gallery
 
@@ -28,7 +28,7 @@ I have played hockey since I was four. I loved it so much back then that I used 
 ![Dog](images/IMG_1396.jpg)
 My friend Griff and I! Griff is my families' 7-year old Boston Terrier. He loves cheese.
 
-![Face](images/surf.jpeg)
+![Face](images/surf.png)
 Surfing (behind a boat)
 
 ![Face](images/dirty3.jpg)

@@ -63,7 +63,7 @@
   <meta property="og:url" content="http://localhost:1313/posts/secondpost/">
   <meta property="og:site_name" content="Will Steedman">
   <meta property="og:title" content="Designing a 3D Printed Robot Arm to Clean My Room">
-  <meta property="og:description" content="Welcome to my blog!">
+  <meta property="og:description" content="Using CAD, math and coding to give me an extra hand with chores">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -79,7 +79,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/posts/secondpost/featured.JPG">
   <meta name="twitter:title" content="Designing a 3D Printed Robot Arm to Clean My Room">
-  <meta name="twitter:description" content="Welcome to my blog!">
+  <meta name="twitter:description" content="Using CAD, math and coding to give me an extra hand with chores">
 
   
   <script type="application/ld+json">
@@ -89,7 +89,7 @@
     "articleSection": "Posts",
     "name": "Designing a 3D Printed Robot Arm to Clean My Room",
     "headline": "Designing a 3D Printed Robot Arm to Clean My Room",
-    "description": "Welcome to my blog!",
+    
     "abstract": "Using CAD, math and coding to give me an extra hand with chores",
     "inLanguage": "en",
     "url" : "http:\/\/localhost:1313\/posts\/secondpost\/",
@@ -106,7 +106,7 @@
     "keywords": ["welcome","new","about","first"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "28"
+    "wordCount": "401"
   }]
   </script>
 
@@ -464,7 +464,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-12-29 00:00:00 &#43;0000 UTC">29 December 2023</time><span class="px-2 text-primary-500">&middot;</span><span>28 words</span>
+  <time datetime="2023-12-29 00:00:00 &#43;0000 UTC">29 December 2023</time><span class="px-2 text-primary-500">&middot;</span><span>401 words</span>
   
 
   
@@ -501,7 +501,73 @@
   
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
     
-    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+
+         <details open id="TOCView"
+  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#experience-learning--skills">Experience, Learning &amp; Skills</a></li>
+    <li><a href="#motivation">Motivation</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#experience-learning--skills">Experience, Learning &amp; Skills</a></li>
+    <li><a href="#motivation">Motivation</a></li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+<script>
+
+  var margin = 200;
+  var marginError = 50;
+
+  (function () {
+    var $window = $(window);
+    var $toc = $('#TOCView');
+    var tocHeight = $toc.height();
+
+    function onResize() {
+      var windowAndMarginHeight = $window.height() - margin;
+      if(tocHeight >= windowAndMarginHeight) {
+        $toc.css("overflow-y", "scroll")
+        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
+      } else {
+        $toc.css("overflow-y", "hidden")
+        $toc.css("max-height", "9999999px")
+      }
+    }
+
+    $window.on('resize', onResize);
+    $(document).ready(onResize);
+  })();
+
+
+
+</script>
+   </div>
+      </div>
+      
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
@@ -509,7 +575,7 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>I always have a messy desk. To fix this, I designed, assembled and coded a four degree-of-freedom 3D-printed robot arm that can pick up objects and wipe countertops.</p>
+          <p>I always have a messy desk. To fix this, I designed, assembled and coded a <strong>four degree-of-freedom</strong>, <strong>half-meter workspace</strong>, <strong>2kg payload, 3D-printed</strong> robot arm that can pick up objects and wipe countertops.</p>
 
 
     
@@ -518,6 +584,67 @@
       ></iframe>
     </div>
 
+
+
+<h2 class="relative group">Experience, Learning &amp; Skills 
+    <div id="experience-learning--skills" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#experience-learning--skills" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/secondpost/photos/CADIso_hu3449688512384884914.png 330w,
+        /posts/secondpost/photos/CADIso_hu407133954667519030.png 660w,
+        /posts/secondpost/photos/CADIso_hu1655541946385569237.png 1024w,
+        /posts/secondpost/photos/CADIso_hu9991252023865949628.png 2x"
+        src="/posts/secondpost/photos/CADIso_hu407133954667519030.png"
+        alt="CADIso"
+      />
+      
+    </figure>
+
+<em>Final CAD for Goose V1</em></p>
+<p>Experience &amp; Skills:</p>
+<ul>
+<li>
+<p>I followed <a href="https://ia903102.us.archive.org/33/items/MechanicalEngineeringDesign9th/Mechanical%20Engineering%20Design%209th.pdf" target="_blank">Shigley&rsquo;s Engineering Design Process</a> through many iterations of <strong>mechanical, electrical and software design</strong>.</p>
+</li>
+<li>
+<p>I developed skills in <strong>full-assembly mechanical design</strong> in <strong>Solidworks</strong>, how to modularize and parameterize parts, electronic <strong>circuit design and debugging</strong>, interfacing electronic hardware with microcontrollers, and <strong>elementary robotic control (FKin and IKin)</strong>.</p>
+</li>
+</ul>
+<p>Learning:</p>
+<ul>
+<li>
+<p><strong>Be dumb enough to start but smart enough to learn</strong> - I didn&rsquo;t think too hard about starting a larger projects like this one or else I would have scared myself off from actually doing it. I found that it is best to embrace the unknown and adapt quickly to design problems as they present themselves. By being resourceful and iterating quickly on less-important design elements you can efficiently ascend towards working designs.</p>
+</li>
+<li>
+<p><strong>Design parts to fail (CAD+physically)</strong> - I probably iterated on the wrist design for the project 20 times. Each time I began a new Solidworks part, imported my motors and other accessories, and re-designed from scratch. This was agonizingly inefficient. The trick I found is to <em>fix high-level geometry ASAP and paramaterize sketches around that geometry</em>. This way, you can work within one part and only change sketch dimensions as opposed to changing whole parts. The other part of this story is <em>modularizing parts to facilitate easy part exchanges</em>. When a super large, hard-to-reach part breaks it can set you back a long time to re-manucature and assemble. By designing discrete, exchangable and dynamically thoughtful parts you save a lot of time and headache.</p>
+</li>
+</ul>
+
+
+<h2 class="relative group">Motivation 
+    <div id="motivation" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#motivation" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>I think robot arms are beautiful in a lot of ways. They are a paradox; complicated in most engineering aspects, but perform tasks like picking up objects and applying forces that are ostensibly so simple. This project was motivated to explore and learn from the engineering complexities and attempt to execute some simple tasks like picking up objects.</p>
+<p>Above is a video of one fascination I had was the mechanical complexity of spherical wrists. Designiners have to find a way to trasmit rotation from revolute actuators typically located at the elbows to mutually perpendicular wrist joints. This often leads to super creative designs featuring belts, pulleys and universal joints.</p>
 
         </div>
         
