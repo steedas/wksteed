@@ -28,8 +28,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.2894ecc869e3caa660d939e19f661251e28c80cd0243e7b48e38cc1776c7f72559e57fd38fc89e659d27db92a88dc2fb57144410f2acd030f0c0d0ca5b1d6560.css"
-    integrity="sha512-KJTsyGnjyqZg2Tnhn2YSUeKMgM0CQ&#43;e0jjjMF3bH9yVZ5X/Tj8ieZZ0n25KojcL7VxREEPKs0DDwwNDKWx1lYA==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.9a31c41fb0781df396d73f770cad1cf20cd4c8d8b277e99355b32a846ecae66b384cb62047d56f47f1b91aed327f56429875407a6d61fdeb238c41549271a1ff.css"
+    integrity="sha512-mjHEH7B4HfOW1z93DK0c8gzUyNiyd&#43;mTVbMqhG7K5ms4TLYgR9VvR/G5Gu0yf1ZCmHVAem1h/esjjEFUknGh/w==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -47,7 +47,8 @@
     integrity="sha512-s&#43;IlJafGLHuOTHwAJUarZJgDFjX6LQeALVk9R216sSYuxhsM7A/p9WU&#43;HJ5sJWy9C2blqEIbT4KnvSwdXJAWOA==" data-copy="" data-copied=""></script>
   
   
-  <script src="/js/zoom.min.js"></script>
+  
+  <script src="/lib/zoom/zoom.min.37d2094687372da3f7343a221a470f6b8806f7891aa46a5a03966af7f0ebd38b9fe536cb154e6ad28f006d184b294525a7c4054b6bbb4be62d8b453b42db99bd.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S&#43;Yti0U7QtuZvQ=="></script>
   
   
   
@@ -93,7 +94,8 @@
   
   
 
-<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
 
 
 
@@ -117,6 +119,7 @@
 
   
   
+
 
 
   
@@ -416,13 +419,6 @@
 
   <section class="flex flex-col max-w-full mt-0 mb-5 prose dark:prose-invert lg:flex-row">
     
-    <script>
-      var oid = "views_term_new"
-      var oid_likes = "likes_term_new"
-    </script>
-    
-    
-    <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
   </section>
 
 
@@ -434,33 +430,49 @@
 
   
 
-  
-
-  
-  <h2 class="mt-12 mb-3 text-2xl font-bold text-neutral-700 first:mt-8 dark:text-neutral-300">
-    2024
-  </h2>
-  <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+  <section class="space-y-10 w-full">
+    
+    
     
     
 
-  <a href="/posts/thirdpost/" class="min-w-full">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a class="flex flex-wrap article border border-neutral-200 dark:border-neutral-700 border-2 rounded-md overflow-hidden" href="/posts/thirdpost/">
     
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card nozoom" style="background-image:url(/posts/thirdpost/featured3_hu15805262276232301157.jpg);"></div>
+        <div class="w-full md:w-auto h-full thumbnail nozoom " style="background-image:url(/posts/thirdpost/featured3_hu15805262276232301157.jpg);"></div>
         
-      
-
-      <div class="px-6 py-4">
-
+      <div class=" p-4">
+      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/thirdpost/">Developing Robots to Compete on the World Stage</div>
         
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
+        
+        
+      </div>
+      <div class="text-sm text-neutral-500 dark:text-neutral-400">
+        
 
 
 
@@ -510,47 +522,58 @@
 
 
 
-        </div>
-
-        
-        <div class="py-1 prose dark:prose-invert">
-          Designing reliable mechanisms for the VEX U World Championships in Dallas
-        </div>
-        
       </div>
-      <div class="px-6 pt-4 pb-2">
-
+      
+      <div class="py-1 max-w-fit prose dark:prose-invert">
+        Designing reliable mechanisms for the VEX U World Championships in Dallas
       </div>
+      
     </div>
   </a>
 
     
-  </section>
-  
-  <h2 class="mt-12 mb-3 text-2xl font-bold text-neutral-700 first:mt-8 dark:text-neutral-300">
-    2023
-  </h2>
-  <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+    
+    
     
     
 
-  <a href="/posts/secondpost/" class="min-w-full">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a class="flex flex-wrap article border border-neutral-200 dark:border-neutral-700 border-2 rounded-md overflow-hidden" href="/posts/secondpost/">
     
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card nozoom" style="background-image:url(/posts/secondpost/featured_hu16952876970430951372.JPG);"></div>
+        <div class="w-full md:w-auto h-full thumbnail nozoom " style="background-image:url(/posts/secondpost/featured_hu16952876970430951372.JPG);"></div>
         
-      
-
-      <div class="px-6 py-4">
-
+      <div class=" p-4">
+      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/secondpost/">Designing a 3D Printed Robot Arm to Clean My Room</div>
         
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
+        
+        
+      </div>
+      <div class="text-sm text-neutral-500 dark:text-neutral-400">
+        
 
 
 
@@ -587,7 +610,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-12-29 00:00:00 &#43;0000 UTC">29 December 2023</time><span class="px-2 text-primary-500">&middot;</span><span>401 words</span>
+  <time datetime="2023-12-29 00:00:00 &#43;0000 UTC">29 December 2023</time><span class="px-2 text-primary-500">&middot;</span><span>376 words</span>
   
 
   
@@ -600,40 +623,55 @@
 
 
 
-        </div>
-
-        
-        <div class="py-1 prose dark:prose-invert">
-          Using CAD, math and coding to give me an extra hand with chores
-        </div>
-        
       </div>
-      <div class="px-6 pt-4 pb-2">
-
+      
+      <div class="py-1 max-w-fit prose dark:prose-invert">
+        Using CAD, math and coding to give me an extra hand with chores
       </div>
+      
     </div>
   </a>
 
     
     
 
-  <a href="/posts/firstpost/" class="min-w-full">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a class="flex flex-wrap article border border-neutral-200 dark:border-neutral-700 border-2 rounded-md overflow-hidden" href="/posts/firstpost/">
     
-    <div class="min-h-full border border-neutral-200 dark:border-neutral-700 border-2 rounded overflow-hidden shadow-2xl relative">
         
-        <div class="w-full thumbnail_card nozoom" style="background-image:url(/posts/firstpost/featured_hu379553795175548682.png);"></div>
+        <div class="w-full md:w-auto h-full thumbnail nozoom " style="background-image:url(/posts/firstpost/featured_hu379553795175548682.png);"></div>
         
-      
-
-      <div class="px-6 py-4">
-
+      <div class=" p-4">
+      <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
           href="/posts/firstpost/">Making Race Car Parts Strong Using Simulation</div>
         
-
-        <div class="text-sm text-neutral-500 dark:text-neutral-400">
-          
+        
+        
+      </div>
+      <div class="text-sm text-neutral-500 dark:text-neutral-400">
+        
 
 
 
@@ -683,25 +721,18 @@
 
 
 
-        </div>
-
-        
-        <div class="py-1 prose dark:prose-invert">
-          Designing robust, machined parts for offroad BAJA racecars
-        </div>
-        
       </div>
-      <div class="px-6 pt-4 pb-2">
-
+      
+      <div class="py-1 max-w-fit prose dark:prose-invert">
+        Designing robust, machined parts for offroad BAJA racecars
       </div>
+      
     </div>
   </a>
 
     
+    
   </section>
-  
-
-  
 
   
 
