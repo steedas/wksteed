@@ -107,7 +107,7 @@
     "keywords": ["welcome","new","about","first"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "567"
+    "wordCount": "840"
   }]
   </script>
 
@@ -467,7 +467,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-12-29 00:00:00 &#43;0000 UTC">29 December 2023</time><span class="px-2 text-primary-500">&middot;</span><span>567 words</span>
+  <time datetime="2023-12-29 00:00:00 &#43;0000 UTC">29 December 2023</time><span class="px-2 text-primary-500">&middot;</span><span>840 words</span>
   
 
   
@@ -645,7 +645,7 @@
 <p><strong>Be dumb enough to start but smart enough to learn</strong> - I didn&rsquo;t think too hard about starting a larger project like this one or else I would have scared myself off from actually doing it. I found that it is best to embrace the unknown and adapt quickly to design problems as they present themselves.</p>
 </li>
 <li>
-<p><strong>Design parts to fail (CAD+physically)</strong> - I probably iterated on the wrist design for the project 20 times. Each time I began a new Solidworks part, imported my motors and other accessories, and re-designed from scratch. This was agonizingly inefficient. The trick I found is to <em>fix high-level geometry ASAP and paramaterize sketches around that geometry</em>. This way, you can work within one part and only change sketch dimensions as opposed to changing whole parts. The other part of this story is <em>modularizing parts to facilitate easy part exchanges</em>. When a super large, hard-to-reach part breaks it can set you back a long time to re-manucature and assemble. By designing discrete, exchangable and spatio-dynamically thoughtful parts you save a lot of time and headache.</p>
+<p><strong>Design parts to fail (CAD+physically)</strong> - I probably iterated on the wrist design for the project 20 times. Each time I began a new Solidworks part, imported my motors and other accessories, and re-designed from scratch. This was agonizingly inefficient. The trick I found is to <em>fix high-level geometry ASAP and paramaterize sketches around that geometry</em>. This way, you can work within one part and only change sketch dimensions as opposed to changing whole parts. The other part of this story is <em>modularizing parts to facilitate easy part exchanges</em>. When a super large, hard-to-reach part breaks it can set you back a long time to re-manufacture and assemble. By designing discrete, exchangable and spatio-dynamically thoughtful parts you save a lot of time and headache.</p>
 </li>
 </ul>
 
@@ -728,7 +728,7 @@
       
     </figure>
 </p>
-<p>I decided on using a linear rail rack-and-pinion gripper system. I took inspiration from <a href="https://www.anninrobotics.com/post/new-servo-gripper-for-the-ar4" target="_blank">Chris Annin&rsquo;s design</a>. It works well and it has some tactility because the servo can detect when it is beginning to stall. The solution isn&rsquo;t super repsonsive and could be improved by adding a legit force sensor on the prong.</p>
+<p>I decided on using a linear rail rack-and-pinion gripper system. I took inspiration from <a href="https://www.anninrobotics.com/post/new-servo-gripper-for-the-ar4" target="_blank">Chris Annin&rsquo;s design</a>. It works well and it has some tactility because the servo can detect when it is beginning to stall. The solution isn&rsquo;t super repsonsive, though, and could be improved by adding a legit force sensor on the prong.</p>
 
 
     
@@ -737,8 +737,7 @@
       ></iframe>
     </div>
 
-<p>ITERATION HERE</p>
-<p>For scale, here is Goose V1 compared to some more legitimate industrial robots from KUKA&rsquo;s fleet, with a human for scale.</p>
+<p>For scale, here is Goose V1 compared to some more legitimate robots from KUKA&rsquo;s fleet, with a human for scale.</p>
 <p>
     <figure>
       <img
@@ -767,7 +766,7 @@
     </span>        
     
 </h3>
-<p>Electronics architecture was governed by the sensor and actuator selection from the mechanical design with some optimizations.</p>
+<p>The electronics architecture was governed by the sensor and actuator selection from the mechanical design. I needed two 36V, 480W power supplies connected in parallel to actuate the four NEMA stepper motors (3x NEMA 23, 1x NEMA 17) and their drivers. This power supply setup has enough power to independently power some microwaves or small ovens.</p>
 <p>
     <figure>
       <img
@@ -784,6 +783,43 @@
       
     </figure>
 </p>
+<p>Stepper motor drivers are signal translators. They take in high-level pulse input signals from a microcontroller (in my case, a Teensy 4.1) and translate these signals into stepped-up, high-fidelity square-wave pulses that the motor can use to move. They also act like a safe-guard and prevent any voltage spikes from damaging the motors. Evidently, they are pretty important for motor performance.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/secondpost/photos/sinewave_hu5957736550635100628.png 330w,
+        /posts/secondpost/photos/sinewave_hu15581968457136137517.png 660w,
+        /posts/secondpost/photos/sinewave_hu9882574214879370089.png 1024w,
+        /posts/secondpost/photos/sinewave_hu6168505612741476516.png 2x"
+        src="/posts/secondpost/photos/sinewave_hu15581968457136137517.png"
+        alt="SineWave"
+      />
+      
+    </figure>
+
+<em>As the microcontroller inputs square wave pulses (top), the stepper driver outputs stepped up sinusoids. You can adjust the resolution of the output to be smoother if your application needs. As your resolution (the amount of microsteps/step) increases, the output pulses resemble smooth sinusoids more and more. The trade off of having high resolution is that you experience reduced torque.</em></p>
+<p>After blowing up several <a href="https://www.pololu.com/product/1182" target="_blank">A4988 drivers</a> (which I had a lot of trouble working with reliably), I bought the bullet and got some more expensive StepperOnline <a href="https://www.omc-stepperonline.com/en-ca/digital-stepper-driver-1-8-5-6a-20-50vdc-for-nema-23-24-34-stepper-motor-dm556t" target="_blank">DM556T</a> and <a href="https://www.omc-stepperonline.com/en-ca/digital-stepper-driver-1-0-4-2a-20-50vdc-for-nema-17-23-24-stepper-motor-dm542t" target="_blank">DM542T</a> drivers that accomodated my voltage and current specs. I enclosed all the electronics in a case for compactness.</p>
+<p>![Enclosure]</p>
+<p>The last notable electronics optimization was the microcontroller itself. I originally was using an old Arduino ATMega board but discovered that the Teensy 4.1 had way more appealing features. Mostly, its 600MHz clock speed and 1024K SRAM appealed to me because it would make algorithm computation super fast, leading to smoother arm kinematics.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/secondpost/photos/TeensyVSArduinoMega_hu1663156036760426423.jpg 330w,
+        /posts/secondpost/photos/TeensyVSArduinoMega_hu2192579665366957140.jpg 660w,
+        /posts/secondpost/photos/TeensyVSArduinoMega_hu14119580112116835800.jpg 1024w,
+        /posts/secondpost/photos/TeensyVSArduinoMega_hu33739866175609502.jpg 2x"
+        src="/posts/secondpost/photos/TeensyVSArduinoMega_hu2192579665366957140.jpg"
+        alt="Teensy"
+      />
+      
+    </figure>
+</p>
 
 
 <h3 class="relative group">Software 
@@ -796,6 +832,15 @@
     </span>        
     
 </h3>
+<p>I started by developing a homing algorithm so I could command each joint t</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/i__zOyVYYi0?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
 
           
           

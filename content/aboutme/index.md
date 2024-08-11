@@ -10,13 +10,13 @@ showWordCount: False
 
 ![Face](images/portrait2.jpeg)
 
-_Welcome_ to my website! Here I talk about my engineering projects and create small tutorials on technology, carpentry and other eclectic hobbies of mine. To reach me, don't hesitate to reach out to me at steedmanwill@gmail.com.
+_Welcome_ to my website! Here I talk about my engineering projects and other topics like technology, carpentry and books. To reach me, don't hesitate to reach out at steedmanwill@gmail.com.
 
 ## Who am I?
 
 ![First](images/first.jpeg)
 
-I am a third year mechatronics engineering student at Queen's University. I chose mechatronics engineering because of the depth of opportunity for creativity and learning it has. Outside of my design projects I love weightlifting, the summer, carpentry, music (indie rock is my favorite) and reading. My favourite book right now is "Make it Stick by Roediger III, Henry and Brown".
+I am a third year mechatronics engineering student at Queen's University. I chose mechatronics engineering because of the depth of opportunity for creativity and learning it has. Outside of my design projects I love weightlifting, the summer, carpentry, music (indie rock is my favorite) and reading. Right now I am reading [A Brief History of Intelligence](https://www.goodreads.com/book/show/62050269-a-brief-history-of-intelligence) by Max Bennett.
 
 ## Gallery
 
@@ -32,7 +32,7 @@ My friend Griff and I! Griff is my families' 7-year old Boston Terrier. He loves
 Surfing (behind a boat)
 
 ![Face](images/dirty3.jpg)
-Mixing concrete gets a bit messy...
+I used to work as a carpenter's assistant for a summer. Mixing concrete gets messy...
 
 ## Why a Website?
 
