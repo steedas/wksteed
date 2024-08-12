@@ -26,8 +26,8 @@
   
   
   
-  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.9a31c41fb0781df396d73f770cad1cf20cd4c8d8b277e99355b32a846ecae66b384cb62047d56f47f1b91aed327f56429875407a6d61fdeb238c41549271a1ff.css"
-    integrity="sha512-mjHEH7B4HfOW1z93DK0c8gzUyNiyd&#43;mTVbMqhG7K5ms4TLYgR9VvR/G5Gu0yf1ZCmHVAem1h/esjjEFUknGh/w==" />
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.2894ecc869e3caa660d939e19f661251e28c80cd0243e7b48e38cc1776c7f72559e57fd38fc89e659d27db92a88dc2fb57144410f2acd030f0c0d0ca5b1d6560.css"
+    integrity="sha512-KJTsyGnjyqZg2Tnhn2YSUeKMgM0CQ&#43;e0jjjMF3bH9yVZ5X/Tj8ieZZ0n25KojcL7VxREEPKs0DDwwNDKWx1lYA==" />
   
   
   <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
@@ -45,8 +45,7 @@
     integrity="sha512-s&#43;IlJafGLHuOTHwAJUarZJgDFjX6LQeALVk9R216sSYuxhsM7A/p9WU&#43;HJ5sJWy9C2blqEIbT4KnvSwdXJAWOA==" data-copy="" data-copied=""></script>
   
   
-  
-  <script src="/lib/zoom/zoom.min.37d2094687372da3f7343a221a470f6b8806f7891aa46a5a03966af7f0ebd38b9fe536cb154e6ad28f006d184b294525a7c4054b6bbb4be62d8b453b42db99bd.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S&#43;Yti0U7QtuZvQ=="></script>
+  <script src="/js/zoom.min.js"></script>
   
   
   
@@ -107,7 +106,7 @@
     "keywords": ["welcome","new","about","first"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "840"
+    "wordCount": "1131"
   }]
   </script>
 
@@ -130,8 +129,7 @@
   
   
 
-<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
-
+<script src="/lib/jquery/jquery.slim.min.js" integrity=""></script>
 
 
 
@@ -155,7 +153,6 @@
 
   
   
-
 
 
   
@@ -467,7 +464,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2023-12-29 00:00:00 &#43;0000 UTC">29 December 2023</time><span class="px-2 text-primary-500">&middot;</span><span>840 words</span>
+  <time datetime="2023-12-29 00:00:00 &#43;0000 UTC">29 December 2023</time><span class="px-2 text-primary-500">&middot;</span><span>1131 words</span>
   
 
   
@@ -801,8 +798,23 @@
     </figure>
 
 <em>As the microcontroller inputs square wave pulses (top), the stepper driver outputs stepped up sinusoids. You can adjust the resolution of the output to be smoother if your application needs. As your resolution (the amount of microsteps/step) increases, the output pulses resemble smooth sinusoids more and more. The trade off of having high resolution is that you experience reduced torque.</em></p>
-<p>After blowing up several <a href="https://www.pololu.com/product/1182" target="_blank">A4988 drivers</a> (which I had a lot of trouble working with reliably), I bought the bullet and got some more expensive StepperOnline <a href="https://www.omc-stepperonline.com/en-ca/digital-stepper-driver-1-8-5-6a-20-50vdc-for-nema-23-24-34-stepper-motor-dm556t" target="_blank">DM556T</a> and <a href="https://www.omc-stepperonline.com/en-ca/digital-stepper-driver-1-0-4-2a-20-50vdc-for-nema-17-23-24-stepper-motor-dm542t" target="_blank">DM542T</a> drivers that accomodated my voltage and current specs. I enclosed all the electronics in a case for compactness.</p>
-<p>![Enclosure]</p>
+<p>After blowing up several <a href="https://www.pololu.com/product/1182" target="_blank">A4988 drivers</a> (which I had a lot of trouble working with reliably), I bought the bullet and got some more expensive StepperOnline <a href="https://www.omc-stepperonline.com/en-ca/digital-stepper-driver-1-8-5-6a-20-50vdc-for-nema-23-24-34-stepper-motor-dm556t" target="_blank">DM556T</a> and <a href="https://www.omc-stepperonline.com/en-ca/digital-stepper-driver-1-0-4-2a-20-50vdc-for-nema-17-23-24-stepper-motor-dm542t" target="_blank">DM542T</a> drivers that accomodated my voltage and current specs. I enclosed all the electronics in a case for compactness. I learned that my cable management skills need work!</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/secondpost/photos/ElectronicsBOX_hu17250022772342277498.jpg 330w,
+        /posts/secondpost/photos/ElectronicsBOX_hu5145331292258792932.jpg 660w,
+        /posts/secondpost/photos/ElectronicsBOX_hu9851638041029766170.jpg 1024w,
+        /posts/secondpost/photos/ElectronicsBOX_hu14133399826016060736.jpg 2x"
+        src="/posts/secondpost/photos/ElectronicsBOX_hu5145331292258792932.jpg"
+        alt="Enclosure"
+      />
+      
+    </figure>
+</p>
 <p>The last notable electronics optimization was the microcontroller itself. I originally was using an old Arduino ATMega board but discovered that the Teensy 4.1 had way more appealing features. Mostly, its 600MHz clock speed and 1024K SRAM appealed to me because it would make algorithm computation super fast, leading to smoother arm kinematics.</p>
 <p>
     <figure>
@@ -820,6 +832,7 @@
       
     </figure>
 </p>
+<p><em>The Teensy 4.1 performs 330.57 times better than a standard Arduino Mega when tested on a CoreMark CPU Benchmark</em></p>
 
 
 <h3 class="relative group">Software 
@@ -832,7 +845,7 @@
     </span>        
     
 </h3>
-<p>I started by developing a homing algorithm so I could command each joint t</p>
+<p>I started by developing a homing algorithm so I could command each joint to its physical limit. The order that you home each joint in actually matters.  Suppose you are trying to home the shoulder joint. If you know the exact orientation of the forearm and wrist relative to the shoulder it becomes easier to prevent collisions since you have known geometry of every joint after the shoulder.</p>
 
 
     
@@ -841,10 +854,52 @@
       ></iframe>
     </div>
 
+<p>My mathematical model for this project was quite crude. I made a lot of simplications in order to make the computations simpler and faster. First, I didn&rsquo;t care about the orientation of the end effector, only its position. Second, I approximated the three linkage robot as an open-chain dual linkage. I made this approximation because it left with me two variables to solve for instead of three.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/secondpost/photos/KinematicModel_hu13751376270415904166.png 330w,
+        /posts/secondpost/photos/KinematicModel_hu17500467834717513202.png 660w,
+        /posts/secondpost/photos/KinematicModel_hu9700847547258709216.png 1024w,
+        /posts/secondpost/photos/KinematicModel_hu13147944000890111333.png 2x"
+        src="/posts/secondpost/photos/KinematicModel_hu17500467834717513202.png"
+        alt="KinModel"
+      />
+      
+    </figure>
+</p>
+<p>Using this model, FKin became trivial because it was simply a matter of plugging in Theta1 and Theta2 into the two nonlinear equations in the diagram.</p>
+<p>I solved for my IKin solution by solving for Theta1 in terms of Theta2 and iterating through all possible values of Theta1 to find one that has the least mathematical error.</p>
+<p>My model and solution are computationally inefficient and geometrically inaccurate. They were good enough for the purposes of this project but in the future, I hope to work more on manipulator control. I had some errors in my linkage angles, which I believe are most likely a consequence of poor belt geometry, belt slipping and rotor slipping under load.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/secondpost/photos/Error_hu10423454511034969758.jpg 330w,
+        /posts/secondpost/photos/Error_hu12030236527792686306.jpg 660w,
+        /posts/secondpost/photos/Error_hu13273425941917406034.jpg 1024w,
+        /posts/secondpost/photos/Error_hu10676806572072303731.jpg 2x"
+        src="/posts/secondpost/photos/Error_hu12030236527792686306.jpg"
+        alt="Error"
+      />
+      
+    </figure>
+</p>
+<p>I learned a lot from this project! I have been reading <a href="https://books.google.ca/books/about/Robot_Modeling_and_Control.html?id=cPhvxwEACAAJ&amp;redir_esc=y" target="_blank">Robot Modelling and Control by Spong</a> and hope to apply the ideas in a future project.</p>
 
-          
-          
-          
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ScoGvFjFqGs?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+
         </div>
         
         
@@ -868,8 +923,8 @@
       </script>
       
       
-      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
       
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
   
     </section>
   <footer class="pt-8 max-w-prose print:hidden">

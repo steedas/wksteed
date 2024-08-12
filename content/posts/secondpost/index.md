@@ -66,17 +66,38 @@ Stepper motor drivers are signal translators. They take in high-level pulse inpu
 ![SineWave](photos/sinewave.png)
 _As the microcontroller inputs square wave pulses (top), the stepper driver outputs stepped up sinusoids. You can adjust the resolution of the output to be smoother if your application needs. As your resolution (the amount of microsteps/step) increases, the output pulses resemble smooth sinusoids more and more. The trade off of having high resolution is that you experience reduced torque._
 
-After blowing up several [A4988 drivers](https://www.pololu.com/product/1182) (which I had a lot of trouble working with reliably), I bought the bullet and got some more expensive StepperOnline [DM556T](https://www.omc-stepperonline.com/en-ca/digital-stepper-driver-1-8-5-6a-20-50vdc-for-nema-23-24-34-stepper-motor-dm556t) and [DM542T](https://www.omc-stepperonline.com/en-ca/digital-stepper-driver-1-0-4-2a-20-50vdc-for-nema-17-23-24-stepper-motor-dm542t) drivers that accomodated my voltage and current specs. I enclosed all the electronics in a case for compactness.
+After blowing up several [A4988 drivers](https://www.pololu.com/product/1182) (which I had a lot of trouble working with reliably), I bought the bullet and got some more expensive StepperOnline [DM556T](https://www.omc-stepperonline.com/en-ca/digital-stepper-driver-1-8-5-6a-20-50vdc-for-nema-23-24-34-stepper-motor-dm556t) and [DM542T](https://www.omc-stepperonline.com/en-ca/digital-stepper-driver-1-0-4-2a-20-50vdc-for-nema-17-23-24-stepper-motor-dm542t) drivers that accomodated my voltage and current specs. I enclosed all the electronics in a case for compactness. I learned that my cable management skills need work!
 
-![Enclosure]
+![Enclosure](photos/ElectronicsBOX.jpg)
 
 The last notable electronics optimization was the microcontroller itself. I originally was using an old Arduino ATMega board but discovered that the Teensy 4.1 had way more appealing features. Mostly, its 600MHz clock speed and 1024K SRAM appealed to me because it would make algorithm computation super fast, leading to smoother arm kinematics.
 
 ![Teensy](photos/TeensyVSArduinoMega.jpg)
 
+_The Teensy 4.1 performs 330.57 times better than a standard Arduino Mega when tested on a CoreMark CPU Benchmark_
+
 ### Software
 
-I started by developing a homing algorithm so I could command each joint t
+I started by developing a homing algorithm so I could command each joint to its physical limit. The order that you home each joint in actually matters.  Suppose you are trying to home the shoulder joint. If you know the exact orientation of the forearm and wrist relative to the shoulder it becomes easier to prevent collisions since you have known geometry of every joint after the shoulder.
 
 {{<youtube i__zOyVYYi0>}}
+
+My mathematical model for this project was quite crude. I made a lot of simplications in order to make the computations simpler and faster. First, I didn't care about the orientation of the end effector, only its position. Second, I approximated the three linkage robot as an open-chain dual linkage. I made this approximation because it left with me two variables to solve for instead of three.
+
+![KinModel](photos/KinematicModel.png)
+
+Using this model, FKin became trivial because it was simply a matter of plugging in Theta1 and Theta2 into the two nonlinear equations in the diagram.
+
+I solved for my IKin solution by solving for Theta1 in terms of Theta2 and iterating through all possible values of Theta1 to find one that has the least mathematical error. 
+
+My model and solution are computationally inefficient and geometrically inaccurate. They were good enough for the purposes of this project but in the future, I hope to work more on manipulator control. I had some errors in my linkage angles, which I believe are most likely a consequence of poor belt geometry, belt slipping and rotor slipping under load.
+
+![Error](photos/Error.jpg)
+
+I learned a lot from this project! I have been reading [Robot Modelling and Control by Spong](https://books.google.ca/books/about/Robot_Modeling_and_Control.html?id=cPhvxwEACAAJ&redir_esc=y) and hope to apply the ideas in a future project.
+
+
+{{<youtube ScoGvFjFqGs>}}
+
+
 
