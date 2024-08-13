@@ -78,7 +78,7 @@ _The Teensy 4.1 performs 330.57 times better than a standard Arduino Mega when t
 
 ### Software
 
-I started by developing a homing algorithm so I could command each joint to its physical limit. The order that you home each joint in actually matters.  Suppose you are trying to home the shoulder joint. If you know the exact orientation of the forearm and wrist relative to the shoulder it becomes easier to prevent collisions since you have known geometry of every joint after the shoulder.
+I started by developing a homing algorithm so I could command each joint to its physical limit. This invovled moving each linkage in the direction of its limit switch until pressing its position. 
 
 {{<youtube i__zOyVYYi0>}}
 
