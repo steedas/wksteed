@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog Posts on Will Steedman</title>
+    <link>http://localhost:1313/blogposts/</link>
+    <description>Recent content in Blog Posts on Will Steedman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© 2024 Will Steedman</copyright>
+    <lastBuildDate>Wed, 07 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/blogposts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChatterBox</title>
+      <link>http://localhost:1313/blogposts/speakerman/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blogposts/speakerman/</guid>
+      <description>Your loud home speaker companion</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogposts/speakerman/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>Effort, Learning and Efficiency</title>
+      <link>http://localhost:1313/blogposts/learning/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blogposts/learning/</guid>
+      <description>My attempts and insights on learning processes</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogposts/learning/featured.png" />
+    </item>
+    
+    <item>
+      <title>Preparing Snow Cones Using a Robot Arm</title>
+      <link>http://localhost:1313/blogposts/snowcone/</link>
+      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/blogposts/snowcone/</guid>
+      <description>Using robotics to help in the kitchen</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogposts/snowcone/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

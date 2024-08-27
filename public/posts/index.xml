@@ -7,9 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Will Steedman</copyright>
-    <lastBuildDate>Sat, 11 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Developing Robots to Compete on the World Stage</title>
+      <title>Characterizing VR Headset Performance with Cobots</title>
+      <link>http://localhost:1313/posts/fourthpost/</link>
+      <pubDate>Fri, 23 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/fourthpost/</guid>
+      <description>Using a KUKA cobot as a tool for designing repeatable hand-tracking experiments</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/fourthpost/featured.png" />
+    </item>
+    
+    <item>
+      <title>Fail-Proofing Mechanisms for Wheeled Robots</title>
       <link>http://localhost:1313/posts/thirdpost/</link>
       <pubDate>Sat, 11 May 2024 00:00:00 +0000</pubDate>
       

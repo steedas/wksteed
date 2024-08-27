@@ -1,5 +1,5 @@
 ---
-title: Developing Robots to Compete on the World Stage
+title: Fail-Proofing Mechanisms for Wheeled Robots
 date: 2024-05-11
 description: "Welcome to my blog!"
 summary: "Designing reliable mechanisms for the VEX U World Championships in Dallas"
