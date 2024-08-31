@@ -5,5 +5,56 @@ description: "Welcome to my blog!"
 summary: "Designing reliable mechanisms for the VEX U World Championships in Dallas"
 tags: ["welcome", "new", "about", "first"]
 ---
-_This_ is the content of my blog post.
+
+I joined QVEX during my second year at Queen's. At QVEX, we build competetive wheeled robots that can launch and catch projectiles, climb poles, and complete other game-related tasks, sometimes autonomously. As part of a mechanical design team, I assisted in development of **reliable projectile intake and launching mechanisms** that helped us to qualify and compete at the VEX U World Championships in Dallas. 
+
+{{<youtube 6EwU8ZQPivY>}}
+
+_Our match against Florida Southern College during Worlds_
+## Experience, Learning & Skills
+
+![WorldsRobots](photos/WorldsRobots.jpg)
+_24" Worlds Robot (left), 15" Worlds Robot (right)_
+
+### Experience & Skills
+
+- Collaborated with >10 engineering students using Onshape, Solidworks and Solidworks Simulation to design, prototype, manufacture and assemble four wheeled robots in 8 months
+
+- Experimented with new mechanisms including rack & pinions, slip gears, chain and sprocket drives
+
+- Developed skills for defending ideas, convincing colleagues of optimal strategies and communicating effectively
+
+### Learning
+
+- **Integration is hard**: CADding an entire system on your own is easy because you have an idea in your head of where each subsystem fits. CADding a system as a team is harder because every designer has their own ideas in their head of where each subsystem fits. Staying organized and making sure everyone is one the same page is a must-have for coherent final designs.
+
+- **A design is not done until it is tested**: We ran out of time to thoroughly test our mechanisms for our Worlds Robots. As a consequence, we got destroyed in compettion at Worlds. We all consumed a little bit too much of what I like to call hopium. It probably isn't in any dictionary, but maybe it should be. Hopium: Irrational optimism and denial of Murphy's Law: "Anything that can go wrong will go wrong".
+
+- **Beware the sunk-cost bias**: Robots are challenging to design and take some time to get right. This past year, we made mistakes by building the mechanisms that were strategically inferior for the game. However, because we spent so long developing these mechanisms, we fell in favor of them. Assessing your decisions at every stage of the design process can allow you to catch biases and make sure your decisions are grounded in what is best for the team
+
+## Motivation
+
+![Group](photos/GroupPhoto.jpg)
+
+Why join QVEX? I joined for the experience and the people. I have learned a lot about team management, collaborative design, the mechanical design process and novel mechanisms. The opportunity has given me the chance to meet a lot of great and talented people interested in designing cool things. I would reccomend the experience for anyone interested in making things happen in robotics.
+
+## Technical Details
+
+
+VEX makes a new game every year. The '23-'24 game was called Over Under. You get points for putting game objects (a green releaux tetrahedron) under a net. Our robots' strategies were to lob balls from one robot to the other and fire them under the net. Basically, alley-oop robots. 
+
+{{<youtube EalVPjAc22I>}}
+_Here is what I mean_
+
+We had a 15" robot and a 24" robot. Note that a lot of the things that I am showing off were not designed by me. Everyone involved (not just mechanical) deserve a lot of credit: **Patrick, Michael, James, Theo, Cole, Maxim, Avery, Peter, Ryan, Nikola, Koen, Cass, Laura, Taylor, Xan, Becca, Ben, Liam, Cal, Callum, Evan, Kieran, Mike, Nick and everyone else I missed**.
+
+ Our 15" robot was super innovative this year. Our key features were a 3D-printed differential swerve drive and a rotating, cascading net.
+
+![15Inch](photos/15inchfeatures.jpg)
+
+Our 24" robot was a lot bigger and more classic. Tank drive and almost 40lbs. Hard to move and designed to play defense and push around other robots.
+
+![24Inch](photos/24inchfeatures.jpg)
+
+
 

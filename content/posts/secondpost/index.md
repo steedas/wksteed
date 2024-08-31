@@ -14,13 +14,13 @@ I always have a messy desk. To fix this, I designed, assembled and coded an open
 ![CADIso](photos/CADIso.png)
 _Final CAD for Goose V1_
 
-Experience & Skills:
+### Experience & Skills
 
 - I followed [Shigley's Engineering Design Process](https://ia903102.us.archive.org/33/items/MechanicalEngineeringDesign9th/Mechanical%20Engineering%20Design%209th.pdf) through many iterations of **mechanical, electrical and software design**.
 
 - I developed skills in **full-assembly mechanical design** in **Solidworks**, how to modularize and parameterize parts, electronic **circuit design and debugging**, interfacing electronic hardware with microcontrollers, and **elementary robotic control (FKin and IKin)**.
 
-Learning:
+### Learning
 
 - **Be dumb enough to start but smart enough to learn** - I didn't think too hard about starting a larger project like this one or else I would have scared myself off from actually doing it. I found that it is best to embrace the unknown and adapt quickly to design problems as they present themselves. 
 
