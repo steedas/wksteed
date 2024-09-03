@@ -52,9 +52,32 @@ We had a 15" robot and a 24" robot. Note that a lot of the things that I am show
 
 ![15Inch](photos/15inchfeatures.jpg)
 
-Our 24" robot was a lot bigger and more classic. Tank drive and almost 40lbs. Hard to move and designed to play defense and push around other robots.
+Our 24" robot was a lot bigger and more of a classic VEX style. Tank drive and almost 40lbs. Hard to move and designed to play defense and push around other robots.
 
 ![24Inch](photos/24inchfeatures.jpg)
 
+### Intakes
+#### What and How
 
+In Over Under, our team's strategy was to launch triballs (the green releaux tetrahedrons from previous videos) from a loading zone over the field and into the other robot. We needed a system to reliably intake triballs from the loading zone into the robot so they could be launched by our flywheel system across the field. To do this, I designed a 6-wheel flex-wheel intake using chain and sprockets to suck game objects into our robot.
 
+![FinalIntake](photos/IntakeRealLife.jpg)
+_The final design_
+
+If interested, the video below highlights some of the features of our robot and why they exist 
+
+#### Issues and Solutions
+
+We ran into a lot of technical issues before achieving a >95% success rate system. Here are the main ones:
+
+- **Friction:** VEX Motors aren't very powerful and burn out easily. We wanted our intakes to be fast and therefore needed a low gearbox reduction to achieve high speeds. Low gearbox reduction decreased available torque, making us particularly susceptible to motor stalling when exposed to oppositional forces. Using properly tensioned bearings and reducing shaft normal forces allowed us to reduce system friction.
+
+{{<youtube rye2vE2-0aM>}}
+_System Testing_
+
+- **
+
+### Linear Puncher V4
+#### What and How
+
+#### Issues and Solutions

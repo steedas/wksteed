@@ -107,7 +107,7 @@
     "keywords": ["welcome","new","about","first"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "598"
+    "wordCount": "804"
   }]
   </script>
 
@@ -467,7 +467,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-05-11 00:00:00 &#43;0000 UTC">11 May 2024</time><span class="px-2 text-primary-500">&middot;</span><span>598 words</span>
+  <time datetime="2024-05-11 00:00:00 &#43;0000 UTC">11 May 2024</time><span class="px-2 text-primary-500">&middot;</span><span>804 words</span>
   
 
   
@@ -525,7 +525,22 @@
       </ul>
     </li>
     <li><a href="#motivation">Motivation</a></li>
-    <li><a href="#technical-details">Technical Details</a></li>
+    <li><a href="#technical-details">Technical Details</a>
+      <ul>
+        <li><a href="#intakes">Intakes</a>
+          <ul>
+            <li><a href="#what-and-how">What and How</a></li>
+            <li><a href="#issues-and-solutions">Issues and Solutions</a></li>
+          </ul>
+        </li>
+        <li><a href="#linear-puncher-v4">Linear Puncher V4</a>
+          <ul>
+            <li><a href="#what-and-how-1">What and How</a></li>
+            <li><a href="#issues-and-solutions-1">Issues and Solutions</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -546,7 +561,22 @@
       </ul>
     </li>
     <li><a href="#motivation">Motivation</a></li>
-    <li><a href="#technical-details">Technical Details</a></li>
+    <li><a href="#technical-details">Technical Details</a>
+      <ul>
+        <li><a href="#intakes">Intakes</a>
+          <ul>
+            <li><a href="#what-and-how">What and How</a></li>
+            <li><a href="#issues-and-solutions">Issues and Solutions</a></li>
+          </ul>
+        </li>
+        <li><a href="#linear-puncher-v4">Linear Puncher V4</a>
+          <ul>
+            <li><a href="#what-and-how-1">What and How</a></li>
+            <li><a href="#issues-and-solutions-1">Issues and Solutions</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -744,7 +774,7 @@
       
     </figure>
 </p>
-<p>Our 24&quot; robot was a lot bigger and more classic. Tank drive and almost 40lbs. Hard to move and designed to play defense and push around other robots.</p>
+<p>Our 24&quot; robot was a lot bigger and more of a classic VEX style. Tank drive and almost 40lbs. Hard to move and designed to play defense and push around other robots.</p>
 <p>
     <figure>
       <img
@@ -761,6 +791,113 @@
       
     </figure>
 </p>
+
+
+<h3 class="relative group">Intakes 
+    <div id="intakes" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#intakes" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+
+<h4 class="relative group">What and How 
+    <div id="what-and-how" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#what-and-how" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>In Over Under, our team&rsquo;s strategy was to launch triballs (the green releaux tetrahedrons from previous videos) from a loading zone over the field and into the other robot. We needed a system to reliably intake triballs from the loading zone into the robot so they could be launched by our flywheel system across the field. To do this, I designed a 6-wheel flex-wheel intake using chain and sprockets to suck game objects into our robot.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/thirdpost/photos/IntakeRealLife_hu7145142608392299813.jpg 330w,
+        /posts/thirdpost/photos/IntakeRealLife_hu16939450967733261267.jpg 660w,
+        /posts/thirdpost/photos/IntakeRealLife_hu14520739230258633150.jpg 1024w,
+        /posts/thirdpost/photos/IntakeRealLife_hu8857239870182167751.jpg 2x"
+        src="/posts/thirdpost/photos/IntakeRealLife_hu16939450967733261267.jpg"
+        alt="FinalIntake"
+      />
+      
+    </figure>
+
+<em>The final design</em></p>
+<p>If interested, the video below highlights some of the features of our robot and why they exist</p>
+
+
+<h4 class="relative group">Issues and Solutions 
+    <div id="issues-and-solutions" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#issues-and-solutions" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+<p>We ran into a lot of technical issues before achieving a &gt;95% success rate system. Here are the main ones:</p>
+<ul>
+<li><strong>Friction:</strong> VEX Motors aren&rsquo;t very powerful and burn out easily. We wanted our intakes to be fast and therefore needed a low gearbox reduction to achieve high speeds. Low gearbox reduction decreased available torque, making us particularly susceptible to motor stalling when exposed to oppositional forces. Using properly tensioned bearings and reducing shaft normal forces allowed us to reduce system friction.</li>
+</ul>
+<p>
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/rye2vE2-0aM?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<em>System Testing</em></p>
+<ul>
+<li>**</li>
+</ul>
+
+
+<h3 class="relative group">Linear Puncher V4 
+    <div id="linear-puncher-v4" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#linear-puncher-v4" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+
+
+<h4 class="relative group">What and How 
+    <div id="what-and-how-1" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#what-and-how-1" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
+
+
+<h4 class="relative group">Issues and Solutions 
+    <div id="issues-and-solutions-1" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#issues-and-solutions-1" aria-label="Anchor">#</a>
+    </span>        
+    
+</h4>
 
           
           
