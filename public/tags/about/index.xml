@@ -10,12 +10,12 @@
     <lastBuildDate>Fri, 23 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Characterizing VR Headset Performance with Cobots</title>
-      <link>http://localhost:1313/posts/fourthpost/</link>
+      <link>http://localhost:1313/posts/vrhandtracking/</link>
       <pubDate>Fri, 23 Aug 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/fourthpost/</guid>
+      <guid>http://localhost:1313/posts/vrhandtracking/</guid>
       <description>Using a KUKA cobot as a tool for designing repeatable hand-tracking experiments</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/fourthpost/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/vrhandtracking/featured.png" />
     </item>
     
     <item>
@@ -50,32 +50,32 @@
     
     <item>
       <title>Fail-Proofing Mechanisms for Wheeled Robots</title>
-      <link>http://localhost:1313/posts/thirdpost/</link>
+      <link>http://localhost:1313/posts/vexoverunder/</link>
       <pubDate>Sat, 11 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/thirdpost/</guid>
+      <guid>http://localhost:1313/posts/vexoverunder/</guid>
       <description>Designing reliable mechanisms for the VEX U World Championships in Dallas</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/thirdpost/featured3.jpg" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/vexoverunder/featured3.jpg" />
     </item>
     
     <item>
       <title>Designing a 3D Printed Robot Arm to Clean My Room</title>
-      <link>http://localhost:1313/posts/secondpost/</link>
+      <link>http://localhost:1313/posts/goosev1/</link>
       <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/secondpost/</guid>
+      <guid>http://localhost:1313/posts/goosev1/</guid>
       <description>Using CAD, math and coding to give me an extra hand with chores</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/secondpost/featured.JPG" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/goosev1/featured.JPG" />
     </item>
     
     <item>
       <title>Making Race Car Parts Strong Using Simulation</title>
-      <link>http://localhost:1313/posts/firstpost/</link>
+      <link>http://localhost:1313/posts/bajahubs/</link>
       <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/firstpost/</guid>
+      <guid>http://localhost:1313/posts/bajahubs/</guid>
       <description>Designing robust, machined parts for offroad BAJA racecars</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/firstpost/featured.png" />
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/bajahubs/featured.png" />
     </item>
     
   </channel>

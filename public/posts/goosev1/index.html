@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
+  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  
+  <meta http-equiv="content-language" content="en" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Designing a 3D Printed Robot Arm to Clean My Room &middot; Will Steedman</title>
+  <meta name="title" content="Designing a 3D Printed Robot Arm to Clean My Room &middot; Will Steedman" />
+  
+  <meta name="description" content="Using CAD, math and coding to give me an extra hand with chores" />
+  <meta name="keywords" content="welcome, new, about, first, " />
+  
+  
+  <link rel="canonical" href="http://localhost:1313/posts/goosev1/" />
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link type="text/css" rel="stylesheet" href="/css/main.bundle.min.9a31c41fb0781df396d73f770cad1cf20cd4c8d8b277e99355b32a846ecae66b384cb62047d56f47f1b91aed327f56429875407a6d61fdeb238c41549271a1ff.css"
+    integrity="sha512-mjHEH7B4HfOW1z93DK0c8gzUyNiyd&#43;mTVbMqhG7K5ms4TLYgR9VvR/G5Gu0yf1ZCmHVAem1h/esjjEFUknGh/w==" />
+  
+  
+  <script type="text/javascript" src="/js/appearance.min.516a16745bea5a9bd011138d254cc0fd3973cd55ce6e15f3dec763e7c7c2c7448f8fe7b54cca811cb821b0c7e12cd161caace1dd794ac3d34d40937cbcc9ee12.js"
+    integrity="sha512-UWoWdFvqWpvQERONJUzA/TlzzVXObhXz3sdj58fCx0SPj&#43;e1TMqBHLghsMfhLNFhyqzh3XlKw9NNQJN8vMnuEg=="></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.b3e22525a7c62c7b8e4c7c002546ab6498031635fa2d07802d593d476d7ab1262ec61b0cec0fe9f5653e1c9e6c256cbd0b66e5a8421b4f82a7bd2c1d5c901638.js"
+    integrity="sha512-s&#43;IlJafGLHuOTHwAJUarZJgDFjX6LQeALVk9R216sSYuxhsM7A/p9WU&#43;HJ5sJWy9C2blqEIbT4KnvSwdXJAWOA==" data-copy="" data-copied=""></script>
+  
+  
+  
+  <script src="/lib/zoom/zoom.min.37d2094687372da3f7343a221a470f6b8806f7891aa46a5a03966af7f0ebd38b9fe536cb154e6ad28f006d184b294525a7c4054b6bbb4be62d8b453b42db99bd.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S&#43;Yti0U7QtuZvQ=="></script>
+  
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="http://localhost:1313/posts/goosev1/">
+  <meta property="og:site_name" content="Will Steedman">
+  <meta property="og:title" content="Designing a 3D Printed Robot Arm to Clean My Room">
+  <meta property="og:description" content="Using CAD, math and coding to give me an extra hand with chores">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-12-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-12-29T00:00:00+00:00">
+    <meta property="article:tag" content="Welcome">
+    <meta property="article:tag" content="New">
+    <meta property="article:tag" content="About">
+    <meta property="article:tag" content="First">
+    <meta property="og:image" content="http://localhost:1313/posts/goosev1/featured.JPG">
+
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/posts/goosev1/featured.JPG">
+  <meta name="twitter:title" content="Designing a 3D Printed Robot Arm to Clean My Room">
+  <meta name="twitter:description" content="Using CAD, math and coding to give me an extra hand with chores">
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Posts",
+    "name": "Designing a 3D Printed Robot Arm to Clean My Room",
+    "headline": "Designing a 3D Printed Robot Arm to Clean My Room",
+    
+    "abstract": "Using CAD, math and coding to give me an extra hand with chores",
+    "inLanguage": "en",
+    "url" : "http:\/\/localhost:1313\/posts\/goosev1\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Will Steedman"
+    },
+    "copyrightYear": "2023",
+    "dateCreated": "2023-12-29T00:00:00\u002b00:00",
+    "datePublished": "2023-12-29T00:00:00\u002b00:00",
+    
+    "dateModified": "2023-12-29T00:00:00\u002b00:00",
+    
+    "keywords": ["welcome","new","about","first"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1098"
+  }]
+  </script>
+
+
+  
+  
+  <meta name="author" content="Will Steedman" />
+  
+  
+  
+  <link href="steedmanwill@gmail.com" rel="me" />
+  
+  
+  <link href="https://github.com/steedas" rel="me" />
+  
+  
+  <link href="https://linkedin.com/in/will-steedman" rel="me" />
+  
+  
+  
+  
+
+<script src="/lib/jquery/jquery.slim.min.b0dca576e87d7eaa5850ae4e61759c065786cdb6489d68fcc82240539eebd5da522bdb4fda085ffd245808c8fe2acb2516408eb774ef26b5f6015fc6737c0ea8.js" integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj&#43;KsslFkCOt3TvJrX2AV/Gc3wOqA=="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  <meta name="theme-color"/>
+  
+  
+</head>
+<body
+  class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32 scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600">
+  <div id="the-top" class="absolute flex self-center">
+    <a class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+      href="#main-content"><span
+        class="font-bold text-primary-600 ltr:pr-2 rtl:pl-2 dark:text-primary-400">&darr;</span>Skip to main content</a>
+  </div>
+  
+  
+  <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
+    class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start space-x-3">
+    
+    <div class="flex flex-1 items-center justify-between">
+        <nav class="flex space-x-3">
+
+            
+            <a href="/" class="text-base font-medium text-gray-500 hover:text-gray-900">Will Steedman</a>
+            
+
+        </nav>
+        <nav class="hidden md:flex items-center space-x-5 md:ml-12 h-12">
+
+            
+            
+            
+  <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Projects
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/blogposts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        Blog Posts
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/aboutme/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="">
+        About Me
+    </p>
+</a>
+
+
+
+            
+            
+
+            
+
+
+            
+            <button id="search-button" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+
+            
+            
+            <div
+                class="ltr:mr-14 rtl:ml-14 flex items-center">
+                <button id="appearance-switcher" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400">
+                    <div class="flex items-center justify-center dark:hidden">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                    </div>
+                    <div class="items-center justify-center hidden dark:flex">
+                        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                    </div>
+                </button>
+            </div>
+            
+
+        </nav>
+        <div class="flex md:hidden items-center space-x-5 md:ml-12 h-12">
+
+            <span></span>
+
+            
+
+
+            
+            <button id="search-button-mobile" aria-label="Search" class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+                title="">
+                
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+            </button>
+            
+
+            
+            
+            <button id="appearance-switcher-mobile" aria-label="Dark mode switcher" type="button" class="text-base hover:text-primary-600 dark:hover:text-primary-400" style="margin-right:5px">
+                <div class="flex items-center justify-center dark:hidden">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+
+  </span>
+
+
+                </div>
+                <div class="items-center justify-center hidden dark:flex">
+                    
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+
+  </span>
+
+
+                </div>
+            </button>
+            
+
+        </div>
+    </div>
+    <div class="-my-2 -mr-2 md:hidden">
+
+        <label id="menu-button" for="menu-controller" class="block">
+            <input type="checkbox" id="menu-controller" class="hidden" />
+            
+            <div class="cursor-pointer hover:text-primary-600 dark:hover:text-primary-400">
+                
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+
+  </span>
+
+
+            </div>
+            <div id="menu-wrapper" style="padding-top:5px;"
+                class="fixed inset-0 z-30 invisible w-screen h-screen m-0 overflow-auto transition-opacity opacity-0 cursor-default bg-neutral-100/50 backdrop-blur-sm dark:bg-neutral-900/50">
+                <ul
+                    class="flex space-y-2 mt-3 flex-col items-end w-full px-6 py-6 mx-auto overflow-visible list-none ltr:text-right rtl:text-left max-w-7xl">
+
+                    <li>
+                        <span
+                            class="cursor-pointer inline-block align-text-bottom hover:text-primary-600 dark:hover:text-primary-400">
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+</span>
+                    </li>
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Projects
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/blogposts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            Blog Posts
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/aboutme/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="">
+            About Me
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                </ul>
+                
+                
+
+            </div>
+        </label>
+    </div>
+</div>
+
+
+
+
+
+  
+  <div class="relative flex flex-col grow">
+    <main id="main-content" class="grow">
+      
+
+
+<article>
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      Designing a 3D Printed Robot Arm to Clean My Room
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2023-12-29 00:00:00 &#43;0000 UTC">29 December 2023</time><span class="px-2 text-primary-500">&middot;</span><span>1098 words</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+
+    
+      
+      
+
+      
+
+      
+
+    
+
+  </header>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+
+         <details open id="TOCView"
+  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#experience-learning--skills">Experience, Learning &amp; Skills</a>
+      <ul>
+        <li><a href="#experience--skills">Experience &amp; Skills</a></li>
+        <li><a href="#learning">Learning</a></li>
+      </ul>
+    </li>
+    <li><a href="#motivation">Motivation</a></li>
+    <li><a href="#technical-details">Technical Details</a>
+      <ul>
+        <li><a href="#mechanical">Mechanical</a></li>
+        <li><a href="#electrical">Electrical</a></li>
+        <li><a href="#software">Software</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    Table of Contents
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#experience-learning--skills">Experience, Learning &amp; Skills</a>
+      <ul>
+        <li><a href="#experience--skills">Experience &amp; Skills</a></li>
+        <li><a href="#learning">Learning</a></li>
+      </ul>
+    </li>
+    <li><a href="#motivation">Motivation</a></li>
+    <li><a href="#technical-details">Technical Details</a>
+      <ul>
+        <li><a href="#mechanical">Mechanical</a></li>
+        <li><a href="#electrical">Electrical</a></li>
+        <li><a href="#software">Software</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+<script>
+
+  var margin = 200;
+  var marginError = 50;
+
+  (function () {
+    var $window = $(window);
+    var $toc = $('#TOCView');
+    var tocHeight = $toc.height();
+
+    function onResize() {
+      var windowAndMarginHeight = $window.height() - margin;
+      if(tocHeight >= windowAndMarginHeight) {
+        $toc.css("overflow-y", "scroll")
+        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
+      } else {
+        $toc.css("overflow-y", "hidden")
+        $toc.css("max-height", "9999999px")
+      }
+    }
+
+    $window.on('resize', onResize);
+    $(document).ready(onResize);
+  })();
+
+
+
+</script>
+   </div>
+      </div>
+      
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="article-content max-w-prose mb-20">
+          <p>I always have a messy desk. To fix this, I designed, assembled and coded an open-source, <strong>four degree-of-freedom</strong>, <strong>half-meter workspace</strong>, <strong>2kg payload, 3D-printed</strong> robot arm that can pick up objects and wipe countertops.</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Ubg6Q48UfvI?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+
+
+<h2 class="relative group">Experience, Learning &amp; Skills 
+    <div id="experience-learning--skills" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#experience-learning--skills" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/goosev1/photos/CADIso_hu6123363449509702507.png 330w,
+        /posts/goosev1/photos/CADIso_hu5682275194995534776.png 660w,
+        /posts/goosev1/photos/CADIso_hu14354403432145094295.png 1024w,
+        /posts/goosev1/photos/CADIso_hu15431522908892591940.png 2x"
+        src="/posts/goosev1/photos/CADIso_hu5682275194995534776.png"
+        alt="CADIso"
+      />
+      
+    </figure>
+
+<em>Final CAD for Goose V1</em></p>
+
+
+<h3 class="relative group">Experience &amp; Skills 
+    <div id="experience--skills" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#experience--skills" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>
+<p>I followed <a href="https://ia903102.us.archive.org/33/items/MechanicalEngineeringDesign9th/Mechanical%20Engineering%20Design%209th.pdf" target="_blank">Shigley&rsquo;s Engineering Design Process</a> through many iterations of <strong>mechanical, electrical and software design</strong>.</p>
+</li>
+<li>
+<p>I developed skills in <strong>full-assembly mechanical design</strong> in <strong>Solidworks</strong>, how to modularize and parameterize parts, electronic <strong>circuit design and debugging</strong>, interfacing electronic hardware with microcontrollers, and <strong>elementary robotic control (FKin and IKin)</strong>.</p>
+</li>
+</ul>
+
+
+<h3 class="relative group">Learning 
+    <div id="learning" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#learning" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>
+<p><strong>Be dumb enough to start but smart enough to learn</strong> - I didn&rsquo;t think too hard about starting a larger project like this one or else I would have scared myself off from actually doing it. I found that it is best to embrace the unknown and adapt quickly to design problems as they present themselves.</p>
+</li>
+<li>
+<p><strong>Design parts to fail (CAD+physically)</strong> - I probably iterated on the wrist design for the project 20 times. Each time I began a new Solidworks part, imported my motors and other accessories, and re-designed from scratch. This was agonizingly inefficient. The trick I found is to <em>fix high-level geometry ASAP and paramaterize sketches around that geometry</em>. This way, you can work within one part and only change sketch dimensions as opposed to changing whole parts. The other part of this story is <em>modularizing parts to facilitate easy part exchanges</em>. When a super large, hard-to-reach part breaks it can set you back a long time to re-manufacture and assemble. By designing discrete, exchangable and spatio-dynamically thoughtful parts you save a lot of time and headache.</p>
+</li>
+</ul>
+
+
+<h2 class="relative group">Motivation 
+    <div id="motivation" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#motivation" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+<p>I think robot arms are beautiful paradoxes; complicated in most engineering aspects, but perform tasks like picking up objects that are ostensibly so simple. This project was motivated to explore and learn from these engineering complexities and attempt to execute some simple tasks like picking up objects and following trajectories.</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/HXJOnWBbcwM?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<p><em>Above is a video of one fascination I had was the mechanical complexity of spherical wrists. Designiners have to be creative to find a way to trasmit rotation from revolute actuators typically located at the elbows to mutually perpendicular wrist joints.</em></p>
+
+
+<h2 class="relative group">Technical Details 
+    <div id="technical-details" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#technical-details" aria-label="Anchor">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">Mechanical 
+    <div id="mechanical" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#mechanical" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>Mechanical design took about 6 months to dial in. I iterated around 15 times towards more optimal (but certainly not perfect) design features. I determined that belts were advantageous to introduce because they allowed me to position heavy motors near the end of joints to offset the weight of other linkages.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/goosev1/photos/BeltSlide_hu12030100865875831139.png 330w,
+        /posts/goosev1/photos/BeltSlide_hu2542146427790324046.png 660w,
+        /posts/goosev1/photos/BeltSlide_hu5025193241875080624.png 1024w,
+        /posts/goosev1/photos/BeltSlide_hu8949076234321440202.png 2x"
+        src="/posts/goosev1/photos/BeltSlide_hu2542146427790324046.png"
+        alt="BeltSlide"
+      />
+      
+    </figure>
+</p>
+<p>Since I didn&rsquo;t have any closed-loop control on my motors (I chose open-loop because it was cheaper) I had to introduce some other strategy to guarantee that my linkages were in the right spot relative to their end-stops. I used limit switches (buttons) to achieve this.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/goosev1/photos/LimitSwitches_hu11340742708686060639.png 330w,
+        /posts/goosev1/photos/LimitSwitches_hu17635876698965604879.png 660w,
+        /posts/goosev1/photos/LimitSwitches_hu1943030477137250121.png 1024w,
+        /posts/goosev1/photos/LimitSwitches_hu9847775425868201944.png 2x"
+        src="/posts/goosev1/photos/LimitSwitches_hu17635876698965604879.png"
+        alt="LimitSwitches"
+      />
+      
+    </figure>
+</p>
+<p>I decided on using a linear rail rack-and-pinion gripper system. I took inspiration from <a href="https://www.anninrobotics.com/post/new-servo-gripper-for-the-ar4" target="_blank">Chris Annin&rsquo;s design</a>. It works well and it has some tactility because the servo can detect when it is beginning to stall. The solution isn&rsquo;t super repsonsive, though, and could be improved by adding a legit force sensor on the prong.</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/fDsLJ5_tpG0?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<p>For scale, here is Goose V1 compared to some more legitimate robots from KUKA&rsquo;s fleet, with a human for scale.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/goosev1/photos/SizeComparison_hu12706287206136800598.png 330w,
+        /posts/goosev1/photos/SizeComparison_hu11148793864120716711.png 660w,
+        /posts/goosev1/photos/SizeComparison_hu17455267043724920845.png 1024w,
+        /posts/goosev1/photos/SizeComparison_hu4456606479749968161.png 2x"
+        src="/posts/goosev1/photos/SizeComparison_hu11148793864120716711.png"
+        alt="SizeComp"
+      />
+      
+    </figure>
+</p>
+
+
+<h3 class="relative group">Electrical 
+    <div id="electrical" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#electrical" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>The electronics architecture was governed by the sensor and actuator selection from the mechanical design. I needed two 36V, 480W power supplies connected in parallel to actuate the four NEMA stepper motors (3x NEMA 23, 1x NEMA 17) and their drivers. This power supply setup has enough power to independently power some microwaves or small ovens.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/goosev1/photos/Electrical_hu12922010817409815198.jpg 330w,
+        /posts/goosev1/photos/Electrical_hu14268666876022194878.jpg 660w,
+        /posts/goosev1/photos/Electrical_hu15692008777337360361.jpg 1024w,
+        /posts/goosev1/photos/Electrical_hu13399074393106834760.jpg 2x"
+        src="/posts/goosev1/photos/Electrical_hu14268666876022194878.jpg"
+        alt="ElecOverview"
+      />
+      
+    </figure>
+</p>
+<p>Stepper motor drivers are signal translators. They take in high-level pulse input signals from a microcontroller (in my case, a Teensy 4.1) and translate these signals into stepped-up, high-fidelity square-wave pulses that the motor can use to move. They also act like a safe-guard and prevent any voltage spikes from damaging the motors. Evidently, they are pretty important for motor performance.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/goosev1/photos/sinewave_hu5957736550635100628.png 330w,
+        /posts/goosev1/photos/sinewave_hu15581968457136137517.png 660w,
+        /posts/goosev1/photos/sinewave_hu9882574214879370089.png 1024w,
+        /posts/goosev1/photos/sinewave_hu6168505612741476516.png 2x"
+        src="/posts/goosev1/photos/sinewave_hu15581968457136137517.png"
+        alt="SineWave"
+      />
+      
+    </figure>
+
+<em>As the microcontroller inputs square wave pulses (top), the stepper driver outputs stepped up sinusoids. You can adjust the resolution of the output to be smoother if your application needs. As your resolution (the amount of microsteps/step) increases, the output pulses resemble smooth sinusoids more and more. The trade off of having high resolution is that you experience reduced torque.</em></p>
+<p>After blowing up several <a href="https://www.pololu.com/product/1182" target="_blank">A4988 drivers</a> (which I had a lot of trouble working with reliably), I bought the bullet and got some more expensive StepperOnline <a href="https://www.omc-stepperonline.com/en-ca/digital-stepper-driver-1-8-5-6a-20-50vdc-for-nema-23-24-34-stepper-motor-dm556t" target="_blank">DM556T</a> and <a href="https://www.omc-stepperonline.com/en-ca/digital-stepper-driver-1-0-4-2a-20-50vdc-for-nema-17-23-24-stepper-motor-dm542t" target="_blank">DM542T</a> drivers that accomodated my voltage and current specs. I enclosed all the electronics in a case for compactness. I learned that my cable management skills need work!</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/goosev1/photos/ElectronicsBOX_hu17250022772342277498.jpg 330w,
+        /posts/goosev1/photos/ElectronicsBOX_hu5145331292258792932.jpg 660w,
+        /posts/goosev1/photos/ElectronicsBOX_hu9851638041029766170.jpg 1024w,
+        /posts/goosev1/photos/ElectronicsBOX_hu14133399826016060736.jpg 2x"
+        src="/posts/goosev1/photos/ElectronicsBOX_hu5145331292258792932.jpg"
+        alt="Enclosure"
+      />
+      
+    </figure>
+</p>
+<p>The last notable electronics optimization was the microcontroller itself. I originally was using an old Arduino ATMega board but discovered that the Teensy 4.1 had way more appealing features. Mostly, its 600MHz clock speed and 1024K SRAM appealed to me because it would make algorithm computation super fast, leading to smoother arm kinematics.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/goosev1/photos/TeensyVSArduinoMega_hu1663156036760426423.jpg 330w,
+        /posts/goosev1/photos/TeensyVSArduinoMega_hu2192579665366957140.jpg 660w,
+        /posts/goosev1/photos/TeensyVSArduinoMega_hu14119580112116835800.jpg 1024w,
+        /posts/goosev1/photos/TeensyVSArduinoMega_hu33739866175609502.jpg 2x"
+        src="/posts/goosev1/photos/TeensyVSArduinoMega_hu2192579665366957140.jpg"
+        alt="Teensy"
+      />
+      
+    </figure>
+</p>
+<p><em>The Teensy 4.1 performs 330.57 times better than a standard Arduino Mega when tested on a CoreMark CPU Benchmark</em></p>
+
+
+<h3 class="relative group">Software 
+    <div id="software" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#software" aria-label="Anchor">#</a>
+    </span>        
+    
+</h3>
+<p>I started by developing a homing algorithm so I could command each joint to its physical limit. This invovled moving each linkage in the direction of its limit switch until pressing its position.</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/i__zOyVYYi0?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+<p>My mathematical model for this project was quite crude. I made a lot of simplications in order to make the computations simpler and faster. First, I didn&rsquo;t care about the orientation of the end effector, only its position. Second, I approximated the three linkage robot as an open-chain dual linkage. I made this approximation because it left with me two variables to solve for instead of three.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/goosev1/photos/KinematicModel_hu13751376270415904166.png 330w,
+        /posts/goosev1/photos/KinematicModel_hu17500467834717513202.png 660w,
+        /posts/goosev1/photos/KinematicModel_hu9700847547258709216.png 1024w,
+        /posts/goosev1/photos/KinematicModel_hu13147944000890111333.png 2x"
+        src="/posts/goosev1/photos/KinematicModel_hu17500467834717513202.png"
+        alt="KinModel"
+      />
+      
+    </figure>
+</p>
+<p>Using this model, FKin became trivial because it was simply a matter of plugging in Theta1 and Theta2 into the two nonlinear equations in the diagram.</p>
+<p>I solved for my IKin solution by solving for Theta1 in terms of Theta2 and iterating through all possible values of Theta1 to find one that has the least mathematical error.</p>
+<p>My model and solution are computationally inefficient and geometrically inaccurate. They were good enough for the purposes of this project but in the future, I hope to work more on manipulator control. I had some errors in my linkage angles, which I believe are most likely a consequence of poor belt geometry, belt slipping and rotor slipping under load.</p>
+<p>
+    <figure>
+      <img
+        class="my-0 rounded-md"
+        loading="lazy"
+        srcset="
+        /posts/goosev1/photos/Error_hu10423454511034969758.jpg 330w,
+        /posts/goosev1/photos/Error_hu12030236527792686306.jpg 660w,
+        /posts/goosev1/photos/Error_hu13273425941917406034.jpg 1024w,
+        /posts/goosev1/photos/Error_hu10676806572072303731.jpg 2x"
+        src="/posts/goosev1/photos/Error_hu12030236527792686306.jpg"
+        alt="Error"
+      />
+      
+    </figure>
+</p>
+<p>I learned a lot from this project! I have been reading <a href="https://books.google.ca/books/about/Robot_Modeling_and_Control.html?id=cPhvxwEACAAJ&amp;redir_esc=y" target="_blank">Robot Modelling and Control by Spong</a> and hope to apply the ideas in a future project.</p>
+
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/ScoGvFjFqGs?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+        
+
+          
+      </div>
+     
+      
+      
+        
+        
+          
+          
+        
+      <script>
+        var oid = "views_posts\/goosev1\/index.md"
+        var oid_likes = "likes_posts\/goosev1\/index.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
+      
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/posts/bajahubs/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Making Race Car Parts Strong Using Simulation</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2023-05-22 00:00:00 &#43;0000 UTC">22 May 2023</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/vexoverunder/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Fail-Proofing Mechanisms for Wheeled Robots</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-05-11 00:00:00 &#43;0000 UTC">11 May 2024</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+    </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+    
+  
+  <div class="flex items-center justify-between">
+
+    
+    
+    <p class="text-sm text-neutral-500 dark:text-neutral-400">
+      &copy;
+      2024
+      Will Steedman
+    </p>
+    
+
+    
+    
+    <p class="text-xs text-neutral-500 dark:text-neutral-400">
+      
+      
+      Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+        href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+    </p>
+    
+
+  </div>
+  <script>
+    
+    mediumZoom(document.querySelectorAll("img:not(.nozoom)"), {
+      margin: 24,
+      background: 'rgba(0,0,0,0.5)',
+      scrollOffset: 0,
+    })
+    
+  </script>
+  
+  
+  <script type="text/javascript" src="/js/process.min.ee03488f19c93c2efb199e2e3014ea5f3cb2ce7d45154adb3399a158cac27ca52831db249ede5bb602700ef87eb02434139de0858af1818ab0fb4182472204a4.js" integrity="sha512-7gNIjxnJPC77GZ4uMBTqXzyyzn1FFUrbM5mhWMrCfKUoMdsknt5btgJwDvh&#43;sCQ0E53ghYrxgYqw&#43;0GCRyIEpA=="></script>
+  
+  
+</footer>
+<div
+  id="search-wrapper"
+  class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  data-url="http://localhost:1313/"
+  style="z-index:500"
+>
+  <div
+    id="search-modal"
+    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+  >
+    <header class="relative z-10 flex items-center justify-between flex-none px-2">
+      <form class="flex items-center flex-auto min-w-0">
+        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
+          
+
+  <span class="relative block icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+
+  </span>
+
+
+        </div>
+        <input
+          type="search"
+          id="search-query"
+          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          placeholder="Search"
+          tabindex="0"
+        />
+      </form>
+      <button
+        id="close-search-button"
+        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        title="Close (Esc)"
+      >
+        
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+
+  </span>
+
+
+      </button>
+    </header>
+    <section class="flex-auto px-2 overflow-auto">
+      <ul id="search-results">
+        
+      </ul>
+    </section>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>
