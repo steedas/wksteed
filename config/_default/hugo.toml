@@ -66,8 +66,6 @@ enableEmoji = true
       type = 'fragments'
       weight = 10
 
-
-
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]

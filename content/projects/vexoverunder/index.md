@@ -1,7 +1,6 @@
 ---
 title: Fail-Proofing Mechanisms for Wheeled Robots
 date: 2024-05-11
-description: "Welcome to my blog!"
 summary: "Designing reliable mechanisms for the VEX U World Championships in Dallas"
 tags: ["welcome", "new", "about", "first"]
 math: true
@@ -107,7 +106,7 @@ An optimization of this design that I didn't cover in the video was the geometry
 
 To see how much better using two plates separated by a spacer is than one, we can calculate the area moment of inertia of both systems. The area moment of inertia is inversely proportional to the beam deflection by the following relation:
 
-\[\sigma_{\text{max}}=\frac{FL^3}{EI}\]
+$$\sigma_{\text{max}}=\frac{FL^3}{EI}$$
 
 _Where F is the force applied from the triball, L is the length of the puncher rod, E is the Young's Modulus of 6061 Aluminum and I is the area moment inertia of the puncher_
 
@@ -117,24 +116,24 @@ Suppose we make the puncher rod twice as thick. How does that change our system'
 
 Option A deflection calculations:
 
-\[I_{\text{A}}={Ld^3}\]
+$$I_{\text{A}}={Ld^3}$$
 
-\[\sigma_{\text{max , A}}=\frac{FL^3}{ELd^3}\]
+$$\sigma_{\text{max , A}}=\frac{FL^3}{ELd^3}$$
 
 Option B deflection calculations:
 
-\[I_{\text{B}} = L((4d)^3-(2d)^3)\]
+$$I_{\text{B}} = L((4d)^3-(2d)^3)$$
 
-\[I_{\text{B}} = 56Ld^3\]
+$$I_{\text{B}} = 56Ld^3$$
 
-\[\sigma_{\text{max , B}}=\frac{FL^3}{56ELd^3}\]
+$$\sigma_{\text{max , B}}=\frac{FL^3}{56ELd^3}$$
 
 When compared:
 
-\[\frac{\sigma_{\text{max , B}}}{\sigma_{\text{max , A}}}=\frac{\frac{FL^3}{56ELd^3}}{\frac{FL^3}{ELd^3}}\]
+$$\frac{\sigma_{\text{max , B}}}{\sigma_{\text{max , A}}}=\frac{\frac{FL^3}{56ELd^3}}{\frac{FL^3}{ELd^3}}$$
 
 
-\[\frac{\sigma_{\text{max , B}}}{\sigma_{\text{max , A}}} = \frac{1}{56}\]
+$$\frac{\sigma_{\text{max , B}}}{\sigma_{\text{max , A}}} = \frac{1}{56}$$
 
 This means that increasing the thickness of the puncher rod twofold decreases the beam deflection 56 times! When we implemented this on our punchers we experienced virtually no deflection.
 
