@@ -116,7 +116,7 @@ Suppose we make the puncher rod twice as thick. How does that change our system'
 
 Option A deflection calculations:
 
-\[I_{\text{A}}={Ld^3}\]
+$$\[I_{\text{A}}={Ld^3}\]$$
 
 \[\sigma_{\text{max , A}}=\frac{FL^3}{ELd^3}\]
 
