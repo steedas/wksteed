@@ -4,6 +4,7 @@ date: 2024-05-11
 description: "Welcome to my blog!"
 summary: "Designing reliable mechanisms for the VEX U World Championships in Dallas"
 tags: ["welcome", "new", "about", "first"]
+math: true
 ---
 
 I joined QVEX during my second year at Queen's. At QVEX, we build competetive wheeled robots that can launch and catch projectiles, climb poles, and complete other game-related tasks, sometimes autonomously. As part of a mechanical design team, I assisted in development of **reliable projectile intake and launching mechanisms** that helped us to qualify and compete at the VEX U World Championships in Dallas. 
