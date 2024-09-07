@@ -106,7 +106,7 @@
     "keywords": ["welcome","new","about","first"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "1230"
+    "wordCount": "1247"
   }]
   </script>
 
@@ -488,7 +488,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-05-11 00:00:00 &#43;0000 UTC">11 May 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1230 words</span>
+  <time datetime="2024-05-11 00:00:00 &#43;0000 UTC">11 May 2024</time><span class="px-2 text-primary-500">&middot;</span><span>1247 words</span>
   
 
   
@@ -1015,7 +1015,12 @@ $$\sigma_{\text{max}}=\frac{FL^3}{EI}$$<p><em>Where F is the force applied from 
       
     </figure>
 </p>
-<p>Option A deflection calculations:</p>
+\[
+\begin{aligned}
+KL(\hat{y} || y) &= \sum_{c=1}^{M}\hat{y}_c \log{\frac{\hat{y}_c}{y_c}} \\
+JS(\hat{y} || y) &= \frac{1}{2}(KL(y||\frac{y+\hat{y}}{2}) + KL(\hat{y}||\frac{y+\hat{y}}{2}))
+\end{aligned}
+\]<p>Option A deflection calculations:</p>
 $$I_{\text{A}}={Ld^3}$$$$\sigma_{\text{max , A}}=\frac{FL^3}{ELd^3}$$<p>Option B deflection calculations:</p>
 $$I_{\text{B}} = L((4d)^3-(2d)^3)$$$$I_{\text{B}} = 56Ld^3$$$$\sigma_{\text{max , B}}=\frac{FL^3}{56ELd^3}$$<p>When compared:</p>
 $$\frac{\sigma_{\text{max , B}}}{\sigma_{\text{max , A}}}=\frac{\frac{FL^3}{56ELd^3}}{\frac{FL^3}{ELd^3}}$$$$\frac{\sigma_{\text{max , B}}}{\sigma_{\text{max , A}}} = \frac{1}{56}$$<p>This means that increasing the thickness of the puncher rod twofold decreases the beam deflection 56 times! When we implemented this on our punchers we experienced virtually no deflection.</p>

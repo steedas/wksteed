@@ -3,7 +3,8 @@ title: Fail-Proofing Mechanisms for Wheeled Robots
 date: 2024-05-11
 summary: "Designing reliable mechanisms for the VEX U World Championships in Dallas"
 tags: ["welcome", "new", "about", "first"]
-math: true
+params:
+  math: true
 ---
 
 I joined QVEX during my second year at Queen's. At QVEX, we build competetive wheeled robots that can launch and catch projectiles, climb poles, and complete other game-related tasks, sometimes autonomously. As part of a mechanical design team, I assisted in development of **reliable projectile intake and launching mechanisms** that helped us to qualify and compete at the VEX U World Championships in Dallas. 
@@ -113,6 +114,16 @@ _Where F is the force applied from the triball, L is the length of the puncher r
 Suppose we make the puncher rod twice as thick. How does that change our system's deflection?
 
 ![Deflection](photos/Deflection.jpg)
+
+
+\[
+\begin{aligned}
+KL(\hat{y} || y) &= \sum_{c=1}^{M}\hat{y}_c \log{\frac{\hat{y}_c}{y_c}} \\
+JS(\hat{y} || y) &= \frac{1}{2}(KL(y||\frac{y+\hat{y}}{2}) + KL(\hat{y}||\frac{y+\hat{y}}{2}))
+\end{aligned}
+\]
+
+
 
 Option A deflection calculations:
 
