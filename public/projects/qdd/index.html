@@ -8,14 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>Characterizing VR Headset Performance with Cobots &middot; Will Steedman</title>
-  <meta name="title" content="Characterizing VR Headset Performance with Cobots &middot; Will Steedman" />
+  <title>Reduction Stackable Quasi-Direct Drive Actuators &middot; Will Steedman</title>
+  <meta name="title" content="Reduction Stackable Quasi-Direct Drive Actuators &middot; Will Steedman" />
   
-  <meta name="description" content="Using a KUKA cobot as a tool for designing repeatable hand-tracking experiments" />
+  <meta name="description" content="A cheaper solution to high torque, ESC integrated BLDCs" />
   <meta name="keywords" content="welcome, new, about, first, " />
   
   
-  <link rel="canonical" href="http://localhost:1313/projects/vrhandtracking/" />
+  <link rel="canonical" href="http://localhost:1313/projects/qdd/" />
   
   
   
@@ -60,26 +60,26 @@
   
   
   
-  <meta property="og:url" content="http://localhost:1313/projects/vrhandtracking/">
+  <meta property="og:url" content="http://localhost:1313/projects/qdd/">
   <meta property="og:site_name" content="Will Steedman">
-  <meta property="og:title" content="Characterizing VR Headset Performance with Cobots">
-  <meta property="og:description" content="Using a KUKA cobot as a tool for designing repeatable hand-tracking experiments">
+  <meta property="og:title" content="Reduction Stackable Quasi-Direct Drive Actuators">
+  <meta property="og:description" content="A cheaper solution to high torque, ESC integrated BLDCs">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="projects">
-    <meta property="article:published_time" content="2024-08-23T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-08-23T00:00:00+00:00">
+    <meta property="article:published_time" content="2024-09-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-09-11T00:00:00+00:00">
     <meta property="article:tag" content="Welcome">
     <meta property="article:tag" content="New">
     <meta property="article:tag" content="About">
     <meta property="article:tag" content="First">
-    <meta property="og:image" content="http://localhost:1313/projects/vrhandtracking/featured.png">
+    <meta property="og:image" content="http://localhost:1313/projects/qdd/featured2.jpg">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/projects/vrhandtracking/featured.png">
-  <meta name="twitter:title" content="Characterizing VR Headset Performance with Cobots">
-  <meta name="twitter:description" content="Using a KUKA cobot as a tool for designing repeatable hand-tracking experiments">
+  <meta name="twitter:image" content="http://localhost:1313/projects/qdd/featured2.jpg">
+  <meta name="twitter:title" content="Reduction Stackable Quasi-Direct Drive Actuators">
+  <meta name="twitter:description" content="A cheaper solution to high torque, ESC integrated BLDCs">
 
   
   <script type="application/ld+json">
@@ -87,26 +87,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "Characterizing VR Headset Performance with Cobots",
-    "headline": "Characterizing VR Headset Performance with Cobots",
+    "name": "Reduction Stackable Quasi-Direct Drive Actuators",
+    "headline": "Reduction Stackable Quasi-Direct Drive Actuators",
     
-    "abstract": "Using a KUKA cobot as a tool for designing repeatable hand-tracking experiments",
+    "abstract": "A cheaper solution to high torque, ESC integrated BLDCs",
     "inLanguage": "en",
-    "url" : "http:\/\/localhost:1313\/projects\/vrhandtracking\/",
+    "url" : "http:\/\/localhost:1313\/projects\/qdd\/",
     "author" : {
       "@type": "Person",
       "name": "Will Steedman"
     },
     "copyrightYear": "2024",
-    "dateCreated": "2024-08-23T00:00:00\u002b00:00",
-    "datePublished": "2024-08-23T00:00:00\u002b00:00",
+    "dateCreated": "2024-09-11T00:00:00\u002b00:00",
+    "datePublished": "2024-09-11T00:00:00\u002b00:00",
     
-    "dateModified": "2024-08-23T00:00:00\u002b00:00",
+    "dateModified": "2024-09-11T00:00:00\u002b00:00",
     
     "keywords": ["welcome","new","about","first"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "163"
+    "wordCount": "8"
   }]
   </script>
 
@@ -445,7 +445,7 @@
   <header id="single_header" class="mt-5 max-w-prose">
     
     <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-      Characterizing VR Headset Performance with Cobots
+      Reduction Stackable Quasi-Direct Drive Actuators
     </h1>
     <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
@@ -488,16 +488,10 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-08-23 00:00:00 &#43;0000 UTC">23 August 2024</time><span class="px-2 text-primary-500">&middot;</span><span>163 words</span>
+  <time datetime="2024-09-11 00:00:00 &#43;0000 UTC">11 September 2024</time><span class="px-2 text-primary-500">&middot;</span><span>8 words</span>
   
 
   
-  
-  <span class="pl-2"><span class="flex" style="cursor: pointer;">
-  <span class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
-    Draft
-  </span>
-</span></span>
   
 </div>
 
@@ -539,16 +533,7 @@
 
 
         <div class="article-content max-w-prose mb-20">
-          <p>This summer I was lucky to work as a research assistant at <a href="https://ingenuitylabs.queensu.ca/" target="_blank">Ingenuity Labs Research Institute</a> apart of <a href="https://mithrilab.com/" target="_blank">MITHRIL</a>. My coworker Eric and I characterised the hand-tracking accuracy of the <a href="https://www.meta.com/ca/quest/quest-pro/" target="_blank">Meta Quest Pro</a> and <a href="https://www.meta.com/ca/quest/quest-3/" target="_blank">Meta Quest 3</a> using a <a href="https://www.kuka.com/-/media/kuka-downloads/imported/8350ff3ca11642998dbdc81dcc2ed44c/0000246832_en.pdf?rev=d1e0fd2b524b42b295c7c1d392315ad1&amp;hash=CF9C0E57E85DA17685B1EA67075ACF45" target="_blank">KUKA LBR iiwa R7 robotic manipulator</a> as a proxy for a human hand/arm. Our results showed landmark tracking accuracy on the order of ~1.12 cm for the Quest Pro and ~1.73cm for the Quest 3, which are some of the highest accuracy results for any measured virtual reality headset. The technology is getting really good.</p>
-<p>
-
-    
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/YZOw3LcU0GM?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
-      ></iframe>
-    </div>
-
-<em>Our third test is designed to see how long it takes for motion from the hand to be displayed in the headset lenses. This delay is measured by counting the number of frames between when the robot passes a certain point (the blue ring around the end effector turns on) and the lens detects the robot at that point (the VR headset lens changes color from blue to purple)</em></p>
+          <p>Working on some new actuators. Write-up coming soon!</p>
 
         </div>
         
@@ -568,8 +553,8 @@
           
         
       <script>
-        var oid = "views_projects\/vrhandtracking\/index.md"
-        var oid_likes = "likes_projects\/vrhandtracking\/index.md"
+        var oid = "views_projects\/qdd\/index.md"
+        var oid_likes = "likes_projects\/qdd\/index.md"
       </script>
       
       
@@ -589,7 +574,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group mr-3" href="/projects/vexoverunder/">
+            <a class="flex group mr-3" href="/projects/vrhandtracking/">
               <span
                 class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -601,11 +586,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Fail-Proofing Mechanisms for Wheeled Robots</span
+                  >Characterizing VR Headset Performance with Cobots</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2024-05-11 00:00:00 &#43;0000 UTC">11 May 2024</time>
+                    <time datetime="2024-08-23 00:00:00 &#43;0000 UTC">23 August 2024</time>
                   
                 </span>
               </span>
@@ -613,28 +598,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group ml-3" href="/projects/qdd/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >Reduction Stackable Quasi-Direct Drive Actuators</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2024-09-11 00:00:00 &#43;0000 UTC">11 September 2024</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>

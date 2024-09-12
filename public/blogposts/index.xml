@@ -28,15 +28,5 @@
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogposts/learning/featured.png" />
     </item>
     
-    <item>
-      <title>Preparing Snow Cones Using a Robot Arm</title>
-      <link>http://localhost:1313/blogposts/snowcone/</link>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/blogposts/snowcone/</guid>
-      <description>Using robotics to help in the kitchen</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogposts/snowcone/featured.png" />
-    </item>
-    
   </channel>
 </rss>

@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© 2024 Will Steedman</copyright>
-    <lastBuildDate>Fri, 23 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reduction Stackable Quasi-Direct Drive Actuators</title>
+      <link>http://localhost:1313/projects/qdd/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/qdd/</guid>
+      <description>A cheaper solution to high torque, ESC integrated BLDCs</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/qdd/featured2.jpg" />
+    </item>
+    
     <item>
       <title>Characterizing VR Headset Performance with Cobots</title>
       <link>http://localhost:1313/projects/vrhandtracking/</link>
@@ -36,16 +46,6 @@
       <guid>http://localhost:1313/blogposts/learning/</guid>
       <description>My attempts and insights on learning processes</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogposts/learning/featured.png" />
-    </item>
-    
-    <item>
-      <title>Preparing Snow Cones Using a Robot Arm</title>
-      <link>http://localhost:1313/blogposts/snowcone/</link>
-      <pubDate>Wed, 07 Aug 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/blogposts/snowcone/</guid>
-      <description>Using robotics to help in the kitchen</description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/blogposts/snowcone/featured.png" />
     </item>
     
     <item>
